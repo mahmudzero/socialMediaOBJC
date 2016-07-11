@@ -44,7 +44,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="3e8-zP-cOM" firstAttribute="width" secondItem="aS8-Ye-k77" secondAttribute="width" id="B1g-1m-UtG"/>
                                     <constraint firstItem="3e8-zP-cOM" firstAttribute="height" secondItem="FsY-go-zvf" secondAttribute="height" constant="29" id="SuD-Tq-FAh"/>
