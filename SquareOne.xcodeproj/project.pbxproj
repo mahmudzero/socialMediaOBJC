@@ -17,6 +17,7 @@
 		F407B8671D2C2EF500D80C1E /* SquareOneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B8661D2C2EF500D80C1E /* SquareOneUITests.m */; };
 		F437622A1D303D5200729D54 /* IdeaElement.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43762291D303D5200729D54 /* IdeaElement.xib */; };
 		F437622C1D3413FD00729D54 /* elementParent.m in Sources */ = {isa = PBXBuildFile; fileRef = F437622B1D3413FD00729D54 /* elementParent.m */; };
+		F490365C1D371E250062BD4B /* testController.m in Sources */ = {isa = PBXBuildFile; fileRef = F437622F1D36D7B900729D54 /* testController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		F43762291D303D5200729D54 /* IdeaElement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdeaElement.xib; sourceTree = "<group>"; };
 		F437622B1D3413FD00729D54 /* elementParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = elementParent.m; sourceTree = "<group>"; };
 		F437622D1D34140B00729D54 /* elementParent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = elementParent.h; sourceTree = "<group>"; };
+		F437622E1D36D7AD00729D54 /* testController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testController.h; sourceTree = "<group>"; };
+		F437622F1D36D7B900729D54 /* testController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				F407B8471D2C2EF400D80C1E /* ViewController.h */,
 				F407B8481D2C2EF400D80C1E /* ViewController.m */,
 				F407B84A1D2C2EF400D80C1E /* Main.storyboard */,
+				F437622E1D36D7AD00729D54 /* testController.h */,
+				F437622F1D36D7B900729D54 /* testController.m */,
 				F43762291D303D5200729D54 /* IdeaElement.xib */,
 				F407B84D1D2C2EF400D80C1E /* Assets.xcassets */,
 				F407B84F1D2C2EF400D80C1E /* LaunchScreen.storyboard */,
@@ -279,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F490365C1D371E250062BD4B /* testController.m in Sources */,
 				F407B8491D2C2EF400D80C1E /* ViewController.m in Sources */,
 				F407B8461D2C2EF400D80C1E /* AppDelegate.m in Sources */,
 				F437622C1D3413FD00729D54 /* elementParent.m in Sources */,

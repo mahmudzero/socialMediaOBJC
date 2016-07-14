@@ -10,41 +10,35 @@
 
 @implementation elementParent
 
-    -(id) initWithCoder:(NSCoder *)aDecoder {
+    -(id)initWithCoder:(NSCoder *)aDecoder {
         
-        self = [super initWithCoder:aDecoder];
+        //self = [super initWithCoder:aDecoder];
         
-        CGRect superView = self.superview.frame;
-        float width = superView.size.width;
-        
-        CGRect frameToUse = self.frame;
-        frameToUse.size = CGSizeMake(width - 10, 50);
-        
-        if(self) {
+        if(self = [super initWithCoder:aDecoder]) {
             
-            self.frame = frameToUse;
-            self.center = CGPointMake(width / 2, 50);
+            CGRect frameToUse = self.bounds;
+            frameToUse.size = CGSizeMake(self.superview.bounds.size.width, 50);
+            
+            self.bounds = frameToUse;
+            self.center = CGPointMake(self.superview.bounds.size.width / 2, 50);
             
         }
         
         return self;
     }
 
-    -(id) initWithFrame:(CGRect)frameToBe {
+    -(id)initWithFrame:(CGRect)frameToBe {
     
         self = [super initWithFrame:frameToBe];
     
-        CGRect superView = self.superview.frame;
-        float width = superView.size.width;
-    
-        CGRect frameToUse = self.frame;
-        frameToUse.size = CGSizeMake(600, 50);
-    
         if(self) {
-        
+            
+            CGRect frameToUse = self.frame;
+            frameToUse.size = CGSizeMake(frameToBe.size.width - 10, 50);
+            
             self.frame = frameToUse;
-            self.center = CGPointMake(width / 2, 50);
-        
+            self.center = CGPointMake(frameToBe.size.width / 2, 50);
+            
         }
     
         return self;

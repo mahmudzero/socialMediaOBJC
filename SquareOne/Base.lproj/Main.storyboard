@@ -42,9 +42,12 @@
                                         <state key="normal" title="LOGIN">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Y4F-Df-wVh" kind="show" id="68q-8b-VVH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="3e8-zP-cOM" firstAttribute="width" secondItem="aS8-Ye-k77" secondAttribute="width" id="B1g-1m-UtG"/>
                                     <constraint firstItem="3e8-zP-cOM" firstAttribute="height" secondItem="FsY-go-zvf" secondAttribute="height" constant="29" id="SuD-Tq-FAh"/>
@@ -71,6 +74,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="565" y="549"/>
+        </scene>
+        <!--Test Controller-->
+        <scene sceneID="Wm5-rv-pxk">
+            <objects>
+                <viewController id="Y4F-Df-wVh" customClass="testController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OPF-Gi-BwB"/>
+                        <viewControllerLayoutGuide type="bottom" id="9RG-0Q-aSa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xj8-RC-b2F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BR-QQ-5dH">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yjr-td-Mvf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYr-Oy-vxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="1194"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fFy-d3-WWi">
