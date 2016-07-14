@@ -6,9 +6,16 @@
 //  Copyright © 2016 Mahmud Assamaray. All rights reserved.
 //
 
+
+// HOW TO LOG TO CONSOLE
+// NSLog(@"%s", "Frame {");
+// NSLog(@"%@", NSStringFromCGRect(subview.frame));
+// NSLog(@"%@", NSStringFromCGPoint(subview.center));
+// NSLog(@"%s", "} Frame");
+ 
+
 #import "testController.h"
 #import "elementParent.h"
-@import UIKit.NSLayoutConstraint;
 
 @interface testController ()
 
@@ -32,13 +39,14 @@
         [self.view addSubview:loadedNib];
         [loadedNib setBackgroundColor:[UIColor blueColor]];
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:loadedNib attribute: NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute: NSLayoutAttributeWidth multiplier:1.0 constant:-5]];
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:loadedNib attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+        
         
     }
 
     - (void)viewDidLoad {
         [super viewDidLoad];
         // Do any additional setup after loading the view, typically from a nib.
-        
     }
 
     - (void)didReceiveMemoryWarning {
@@ -47,11 +55,3 @@
     }
 
 @end
-
-
-/* HOW TO LOG TO CONSOLE
- NSLog(@"%s", "Frame {");
- NSLog(@"%@", NSStringFromCGRect(subview.frame));
- NSLog(@"%@", NSStringFromCGPoint(subview.center));
- NSLog(@"%s", "} Frame");
- */
