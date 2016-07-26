@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@import UIKit.NSLayoutConstraint;
+@import UIKit;
 
 @interface testController : UIViewController
 

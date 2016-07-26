@@ -12,17 +12,7 @@
 
     -(id)initWithCoder:(NSCoder *)aDecoder {
         
-        //self = [super initWithCoder:aDecoder];
-        
-        if(self = [super initWithCoder:aDecoder]) {
-            
-            CGRect frameToUse = self.bounds;
-            frameToUse.size = CGSizeMake(self.superview.bounds.size.width, 50);
-            
-            self.bounds = frameToUse;
-            self.center = CGPointMake(self.superview.bounds.size.width / 2, 50);
-            
-        }
+        self = [super initWithCoder:aDecoder];
         
         return self;
     }

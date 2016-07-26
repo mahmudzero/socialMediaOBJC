@@ -15,8 +15,10 @@
 		F407B8511D2C2EF400D80C1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F407B84F1D2C2EF400D80C1E /* LaunchScreen.storyboard */; };
 		F407B85C1D2C2EF500D80C1E /* SquareOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B85B1D2C2EF500D80C1E /* SquareOneTests.m */; };
 		F407B8671D2C2EF500D80C1E /* SquareOneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B8661D2C2EF500D80C1E /* SquareOneUITests.m */; };
-		F437622A1D303D5200729D54 /* IdeaElement.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43762291D303D5200729D54 /* IdeaElement.xib */; };
+		F40EA10F1D46A89200FE248F /* IdeaElement.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40EA10E1D46A89200FE248F /* IdeaElement.xib */; };
+		F437622A1D303D5200729D54 /* NotificationElement.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43762291D303D5200729D54 /* NotificationElement.xib */; };
 		F437622C1D3413FD00729D54 /* elementParent.m in Sources */ = {isa = PBXBuildFile; fileRef = F437622B1D3413FD00729D54 /* elementParent.m */; };
+		F4DFB51E1D41340000825F41 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DFB51D1D41340000825F41 /* picture.png */; };
 		F4E420061D373043004DCCB3 /* testController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E420051D373043004DCCB3 /* testController.m */; };
 /* End PBXBuildFile section */
 
@@ -54,9 +56,11 @@
 		F407B8621D2C2EF500D80C1E /* SquareOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F407B8661D2C2EF500D80C1E /* SquareOneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquareOneUITests.m; sourceTree = "<group>"; };
 		F407B8681D2C2EF500D80C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F43762291D303D5200729D54 /* IdeaElement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdeaElement.xib; sourceTree = "<group>"; };
+		F40EA10E1D46A89200FE248F /* IdeaElement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdeaElement.xib; sourceTree = "<group>"; };
+		F43762291D303D5200729D54 /* NotificationElement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationElement.xib; sourceTree = "<group>"; };
 		F437622B1D3413FD00729D54 /* elementParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = elementParent.m; sourceTree = "<group>"; };
 		F437622D1D34140B00729D54 /* elementParent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = elementParent.h; sourceTree = "<group>"; };
+		F4DFB51D1D41340000825F41 /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = picture.png; path = ../../../picture.png; sourceTree = "<group>"; };
 		F4E420051D373043004DCCB3 /* testController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testController.m; sourceTree = "<group>"; };
 		F4E420081D3730CE004DCCB3 /* testController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,7 +122,9 @@
 				F407B84A1D2C2EF400D80C1E /* Main.storyboard */,
 				F4E420081D3730CE004DCCB3 /* testController.h */,
 				F4E420051D373043004DCCB3 /* testController.m */,
-				F43762291D303D5200729D54 /* IdeaElement.xib */,
+				F43762291D303D5200729D54 /* NotificationElement.xib */,
+				F40EA10E1D46A89200FE248F /* IdeaElement.xib */,
+				F4DFB51D1D41340000825F41 /* picture.png */,
 				F407B84D1D2C2EF400D80C1E /* Assets.xcassets */,
 				F407B84F1D2C2EF400D80C1E /* LaunchScreen.storyboard */,
 				F407B8521D2C2EF400D80C1E /* Info.plist */,
@@ -258,9 +264,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F407B8511D2C2EF400D80C1E /* LaunchScreen.storyboard in Resources */,
-				F437622A1D303D5200729D54 /* IdeaElement.xib in Resources */,
+				F437622A1D303D5200729D54 /* NotificationElement.xib in Resources */,
 				F407B84E1D2C2EF400D80C1E /* Assets.xcassets in Resources */,
+				F4DFB51E1D41340000825F41 /* picture.png in Resources */,
 				F407B84C1D2C2EF400D80C1E /* Main.storyboard in Resources */,
+				F40EA10F1D46A89200FE248F /* IdeaElement.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
