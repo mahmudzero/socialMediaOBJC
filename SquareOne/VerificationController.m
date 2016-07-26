@@ -18,6 +18,13 @@
 
 @implementation VerificationController
 
+    - (IBAction)clearButton:(id)sender {
+        [_firstField setText:NULL];
+        [_secodField setText:NULL];
+        [_thirdField setText:NULL];
+        [_fourthField setText:NULL];
+    }
+
     - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
         
         if(range.length + range.location > textField.text.length) {
@@ -25,22 +32,57 @@
         }
         NSUInteger newLength = [textField.text length] + [string length] - range.length;
         
-        if(_firstField.isFirstResponder || _firstField.text.length != 0) {
-            [_secodField becomeFirstResponder];
-            return newLength <= 1;
-        } else if (_secodField.isFirstResponder & (_secodField.text.length != 0)) {
-            [_thirdField becomeFirstResponder];
-            return newLength <= 1;
-        } else if (_thirdField.isFirstResponder & (_thirdField.text.length !=0)) {
-            [_fourthField becomeFirstResponder];
-            return newLength <= 1;
-        } else if (_fourthField.isFirstResponder & (_fourthField.text.length !=0)) {
-            [self.view endEditing:YES];
-            return newLength <= 1;
-        }
+        [_firstField addTarget:self action:@selector(changeFirstResponder) forControlEvents:UIControlEventEditingChanged];
+        [_firstField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
         
+        [_secodField addTarget:self action:@selector(changeFirstResponder) forControlEvents:UIControlEventEditingChanged];
+        [_secodField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
+        
+        [_thirdField addTarget:self action:@selector(changeFirstResponder) forControlEvents:UIControlEventEditingChanged];
+        [_thirdField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
+        
+        [_fourthField addTarget:self action:@selector(changeFirstResponder) forControlEvents:UIControlEventEditingChanged];
+        [_fourthField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
         
         return newLength <= 1;
+    }
+
+    - (void)clearField:(UITextField *)textField {
+        [textField setText:NULL];
+    }
+
+    - (void)changeFirstResponder {
+        if(_firstField.isFirstResponder) {
+            [_firstField resignFirstResponder];
+            [_secodField becomeFirstResponder];
+        } else if(_secodField.isFirstResponder) {
+            [_secodField resignFirstResponder];
+            [_thirdField becomeFirstResponder];
+        } else if(_thirdField.isFirstResponder) {
+            [_thirdField resignFirstResponder];
+            [_fourthField becomeFirstResponder];
+        } else if(_fourthField.isFirstResponder) {
+            [_fourthField resignFirstResponder];
+            [self.view endEditing:YES];
+        }
+    }
+
+    - (void)textFieldDidEndEditing:(UITextField *)textField {
+    
+        if(_firstField.isFirstResponder && _firstField.text.length != 0) {
+            [_firstField resignFirstResponder];
+            [_secodField becomeFirstResponder];
+        } else if(_secodField.isFirstResponder && _secodField.text.length != 0) {
+            [_secodField resignFirstResponder];
+            [_thirdField becomeFirstResponder];
+        } else if(_thirdField.isFirstResponder && _thirdField.text.length != 0) {
+            [_thirdField resignFirstResponder];
+            [_fourthField becomeFirstResponder];
+        } else if(_fourthField.isFirstResponder && _fourthField.text.length != 0) {
+            [_fourthField resignFirstResponder];
+            [self.view endEditing:YES];
+        }
+        
     }
 
     - (void)loadView {
