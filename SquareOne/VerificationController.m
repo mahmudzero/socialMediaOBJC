@@ -18,6 +18,7 @@
 
 @implementation VerificationController
 
+
     - (IBAction)clearButton:(id)sender {
         [_firstField setText:NULL];
         [_secodField setText:NULL];
@@ -32,62 +33,71 @@
         }
         NSUInteger newLength = [textField.text length] + [string length] - range.length;
         
-        [_firstField addTarget:self action:@selector(changeFirstResponder) forControlEvents:UIControlEventEditingChanged];
-        [_firstField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
-        
-        [_secodField addTarget:self action:@selector(changeFirstResponder) forControlEvents:UIControlEventEditingChanged];
-        [_secodField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
-        
-        [_thirdField addTarget:self action:@selector(changeFirstResponder) forControlEvents:UIControlEventEditingChanged];
-        [_thirdField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
-        
-        [_fourthField addTarget:self action:@selector(changeFirstResponder) forControlEvents:UIControlEventEditingChanged];
-        [_fourthField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
+        switch(textField.tag) {
+            case 0:
+                [self handleFirstTextFieldEvent];
+                break;
+            case 1:
+                [self handleSecondTextFieldEvent];
+                break;
+            case 2:
+                [self handleThirdTextFieldEvent];
+                break;
+            case 3:
+                [self handleFourthTextFieldEvent];
+                break;
+            default:
+                break;
+        }
         
         return newLength <= 1;
+    }
+
+    - (void)handleFirstTextFieldEvent {
+        [_firstField addTarget:self action:@selector(changeFirstResponderOneToTwo) forControlEvents:UIControlEventEditingChanged];
+        [_firstField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
+    }
+
+    - (void)handleSecondTextFieldEvent {
+        [_secodField addTarget:self action:@selector(changeFirstResponderTwoToThree) forControlEvents:UIControlEventEditingChanged];
+        [_secodField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
+    }
+
+    - (void)handleThirdTextFieldEvent {
+        [_thirdField addTarget:self action:@selector(changeFirstResponderThreeToFour) forControlEvents:UIControlEventEditingChanged];
+        [_thirdField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
+    }
+
+    - (void)handleFourthTextFieldEvent {
+        [_fourthField addTarget:self action:@selector(changeFirstResponderFour) forControlEvents:UIControlEventEditingChanged];
+        [_fourthField addTarget:self action:@selector(clearField:) forControlEvents:UIControlEventEditingDidBegin];
     }
 
     - (void)clearField:(UITextField *)textField {
         [textField setText:NULL];
     }
 
-    - (void)changeFirstResponder {
-        if(_firstField.isFirstResponder) {
-            [_firstField resignFirstResponder];
-            [_secodField becomeFirstResponder];
-        } else if(_secodField.isFirstResponder) {
-            [_secodField resignFirstResponder];
-            [_thirdField becomeFirstResponder];
-        } else if(_thirdField.isFirstResponder) {
-            [_thirdField resignFirstResponder];
-            [_fourthField becomeFirstResponder];
-        } else if(_fourthField.isFirstResponder) {
-            [_fourthField resignFirstResponder];
-            [self.view endEditing:YES];
-        }
+    - (void)changeFirstResponder:(UITextField *)responderOne toResponder:(UITextField *)responderTwo {
+        [responderOne resignFirstResponder];
+        [responderTwo becomeFirstResponder];
     }
 
-    - (void)textFieldDidEndEditing:(UITextField *)textField {
-    
-        if(_firstField.isFirstResponder && _firstField.text.length != 0) {
-            [_firstField resignFirstResponder];
-            [_secodField becomeFirstResponder];
-        } else if(_secodField.isFirstResponder && _secodField.text.length != 0) {
-            [_secodField resignFirstResponder];
-            [_thirdField becomeFirstResponder];
-        } else if(_thirdField.isFirstResponder && _thirdField.text.length != 0) {
-            [_thirdField resignFirstResponder];
-            [_fourthField becomeFirstResponder];
-        } else if(_fourthField.isFirstResponder && _fourthField.text.length != 0) {
-            [_fourthField resignFirstResponder];
-            [self.view endEditing:YES];
-        }
-        
+    - (void)changeFirstResponderOneToTwo {
+        [self changeFirstResponder:_firstField toResponder:_secodField];
+    }
+    - (void)changeFirstResponderTwoToThree {
+        [self changeFirstResponder:_secodField toResponder:_thirdField];
+    }
+    - (void)changeFirstResponderThreeToFour {
+        [self changeFirstResponder:_thirdField toResponder:_fourthField];
+    }
+    - (void)changeFirstResponderFour {
+        [_fourthField resignFirstResponder];
+        [self.view endEditing:YES];
     }
 
     - (void)loadView {
         [super loadView];
-
     }
 
     - (void)viewDidLoad {

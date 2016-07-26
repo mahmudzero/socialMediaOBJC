@@ -19,6 +19,7 @@
 		F40EA1131D47DEBE00FE248F /* VerificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40EA1121D47DEBE00FE248F /* VerificationController.m */; };
 		F437622A1D303D5200729D54 /* NotificationElement.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43762291D303D5200729D54 /* NotificationElement.xib */; };
 		F437622C1D3413FD00729D54 /* elementParent.m in Sources */ = {isa = PBXBuildFile; fileRef = F437622B1D3413FD00729D54 /* elementParent.m */; };
+		F45DA7841D48269C00B31AA7 /* IdeaTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45DA7831D48269C00B31AA7 /* IdeaTabController.m */; };
 		F4DFB51E1D41340000825F41 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DFB51D1D41340000825F41 /* picture.png */; };
 		F4E420061D373043004DCCB3 /* testController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E420051D373043004DCCB3 /* testController.m */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,8 @@
 		F43762291D303D5200729D54 /* NotificationElement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationElement.xib; sourceTree = "<group>"; };
 		F437622B1D3413FD00729D54 /* elementParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = elementParent.m; sourceTree = "<group>"; };
 		F437622D1D34140B00729D54 /* elementParent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = elementParent.h; sourceTree = "<group>"; };
+		F45DA7831D48269C00B31AA7 /* IdeaTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdeaTabController.m; sourceTree = "<group>"; };
+		F45DA7851D4826AB00B31AA7 /* IdeaTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IdeaTabController.h; path = ../IdeaTabController.h; sourceTree = "<group>"; };
 		F4DFB51D1D41340000825F41 /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = picture.png; path = ../../../picture.png; sourceTree = "<group>"; };
 		F4E420051D373043004DCCB3 /* testController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testController.m; sourceTree = "<group>"; };
 		F4E420081D3730CE004DCCB3 /* testController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testController.h; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 			children = (
 				F407B8441D2C2EF400D80C1E /* AppDelegate.h */,
 				F407B8451D2C2EF400D80C1E /* AppDelegate.m */,
+				F45DA7871D4826EA00B31AA7 /* Helper Files */,
 				F40EA1111D47DCD700FE248F /* ViewControllers */,
 				F40EA1101D47DCB100FE248F /* StoryBoards and Elements */,
 				F4DFB51D1D41340000825F41 /* picture.png */,
@@ -170,14 +174,23 @@
 			children = (
 				F407B8471D2C2EF400D80C1E /* ViewController.h */,
 				F407B8481D2C2EF400D80C1E /* ViewController.m */,
-				F40EA1121D47DEBE00FE248F /* VerificationController.m */,
 				F40EA1141D47DECA00FE248F /* VerificationController.h */,
+				F40EA1121D47DEBE00FE248F /* VerificationController.m */,
 				F4E420081D3730CE004DCCB3 /* testController.h */,
 				F4E420051D373043004DCCB3 /* testController.m */,
-				F437622B1D3413FD00729D54 /* elementParent.m */,
-				F437622D1D34140B00729D54 /* elementParent.h */,
+				F45DA7851D4826AB00B31AA7 /* IdeaTabController.h */,
+				F45DA7831D48269C00B31AA7 /* IdeaTabController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F45DA7871D4826EA00B31AA7 /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				F437622D1D34140B00729D54 /* elementParent.h */,
+				F437622B1D3413FD00729D54 /* elementParent.m */,
+			);
+			name = "Helper Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +332,7 @@
 				F407B8491D2C2EF400D80C1E /* ViewController.m in Sources */,
 				F407B8461D2C2EF400D80C1E /* AppDelegate.m in Sources */,
 				F437622C1D3413FD00729D54 /* elementParent.m in Sources */,
+				F45DA7841D48269C00B31AA7 /* IdeaTabController.m in Sources */,
 				F407B8431D2C2EF400D80C1E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

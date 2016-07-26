@@ -65,7 +65,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NTG-01-YjJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="40J-Eh-TNJ"/>
                             <constraint firstItem="FsY-go-zvf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4V4-F4-o6w"/>
@@ -88,7 +88,7 @@
                         <viewControllerLayoutGuide type="top" id="OPF-Gi-BwB"/>
                         <viewControllerLayoutGuide type="bottom" id="9RG-0Q-aSa"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xj8-RC-b2F">
+                    <view key="view" contentMode="scaleToFill" id="xj8-RC-b2F" userLabel="Device">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -97,7 +97,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYr-Oy-vxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -112,10 +112,10 @@
                         <viewControllerLayoutGuide type="top" id="geg-wv-5mR"/>
                         <viewControllerLayoutGuide type="bottom" id="X1k-N0-6nI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9xv-jm-UAc">
+                    <view key="view" contentMode="scaleToFill" id="9xv-jm-UAc" userLabel="Device">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="Zem-qs-4d2"/>
                 </viewController>
@@ -131,10 +131,10 @@
                         <viewControllerLayoutGuide type="top" id="zAD-ei-fcU"/>
                         <viewControllerLayoutGuide type="bottom" id="T3g-4Q-QYh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hWJ-9M-fTP">
+                    <view key="view" contentMode="scaleToFill" id="hWJ-9M-fTP" userLabel="Device">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="6CR-0l-qAc"/>
                 </viewController>
@@ -150,10 +150,10 @@
                         <viewControllerLayoutGuide type="top" id="uwI-7I-cbz"/>
                         <viewControllerLayoutGuide type="bottom" id="ZeB-Xd-Zz4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bQZ-OO-yUS">
+                    <view key="view" contentMode="scaleToFill" id="bQZ-OO-yUS" userLabel="Device">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="y5t-Su-JQY"/>
                 </viewController>
@@ -164,17 +164,46 @@
         <!--IdeaTab-->
         <scene sceneID="Xw8-jN-xDT">
             <objects>
-                <viewController title="IdeaTab" id="x7v-e2-gro" customClass="IdeaTab" sceneMemberID="viewController">
+                <viewController title="IdeaTab" id="x7v-e2-gro" customClass="IdeaTabController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sVg-9H-cRa"/>
                         <viewControllerLayoutGuide type="bottom" id="3K2-kd-UQy"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lxq-MC-kdB">
+                    <view key="view" contentMode="scaleToFill" id="lxq-MC-kdB" userLabel="Device">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nni-Du-39O" userLabel="SuperView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLX-Nx-bDG" userLabel="MenuBar">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="1" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ExI-0R-yWW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CLX-Nx-bDG" firstAttribute="top" secondItem="nni-Du-39O" secondAttribute="top" id="E5K-aL-en1"/>
+                                    <constraint firstItem="CLX-Nx-bDG" firstAttribute="width" secondItem="nni-Du-39O" secondAttribute="width" id="KZD-NG-qwu"/>
+                                    <constraint firstItem="CLX-Nx-bDG" firstAttribute="centerX" secondItem="nni-Du-39O" secondAttribute="centerX" id="pgr-Ui-Qw6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nni-Du-39O" firstAttribute="top" secondItem="sVg-9H-cRa" secondAttribute="bottom" constant="-20" id="Ueu-eS-ZHI"/>
+                            <constraint firstItem="nni-Du-39O" firstAttribute="width" secondItem="lxq-MC-kdB" secondAttribute="width" id="ZRK-7p-Pej"/>
+                            <constraint firstItem="3K2-kd-UQy" firstAttribute="top" secondItem="nni-Du-39O" secondAttribute="bottom" id="a8K-Xg-eMa"/>
+                            <constraint firstItem="nni-Du-39O" firstAttribute="centerX" secondItem="lxq-MC-kdB" secondAttribute="centerX" id="qaD-7L-akq"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="hoa-1R-hVd"/>
+                    <connections>
+                        <outlet property="menuBar" destination="CLX-Nx-bDG" id="PCS-ow-3pG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pw1-bU-YT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -326,7 +355,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="M82-or-fea" firstAttribute="height" secondItem="61d-pE-Irg" secondAttribute="height" id="PTW-uq-Tef"/>
                             <constraint firstItem="M82-or-fea" firstAttribute="centerX" secondItem="61d-pE-Irg" secondAttribute="centerX" id="ZcF-jP-hK6"/>
@@ -426,10 +455,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjh-bS-iX4">
                                         <rect key="frame" x="423" y="185" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="X">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <state key="normal" title="X"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="15"/>
@@ -579,7 +605,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Q7f-Ud-fA4" firstAttribute="height" secondItem="K2L-hx-yRx" secondAttribute="height" id="3nC-Ln-8DG"/>
                             <constraint firstItem="Q7f-Ud-fA4" firstAttribute="centerY" secondItem="K2L-hx-yRx" secondAttribute="centerY" id="PWv-MJ-jpF"/>
@@ -763,7 +788,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WV1-2b-GRx" firstAttribute="centerX" secondItem="8ui-oy-xip" secondAttribute="centerX" id="TwY-N7-LuH"/>
                             <constraint firstItem="WV1-2b-GRx" firstAttribute="centerY" secondItem="8ui-oy-xip" secondAttribute="centerY" id="gDS-gd-NlG"/>
@@ -778,9 +803,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QJT-8q-hqS"/>
+        <segue reference="bIq-xe-wiL"/>
+        <segue reference="giF-h7-wQM"/>
         <segue reference="98Z-eg-flf"/>
-        <segue reference="qrv-aG-8a1"/>
         <segue reference="SeU-sQ-ggV"/>
     </inferredMetricsTieBreakers>
 </document>
