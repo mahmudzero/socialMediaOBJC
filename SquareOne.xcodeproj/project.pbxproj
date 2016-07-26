@@ -16,6 +16,7 @@
 		F407B85C1D2C2EF500D80C1E /* SquareOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B85B1D2C2EF500D80C1E /* SquareOneTests.m */; };
 		F407B8671D2C2EF500D80C1E /* SquareOneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B8661D2C2EF500D80C1E /* SquareOneUITests.m */; };
 		F40EA10F1D46A89200FE248F /* IdeaElement.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40EA10E1D46A89200FE248F /* IdeaElement.xib */; };
+		F40EA1131D47DEBE00FE248F /* VerificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40EA1121D47DEBE00FE248F /* VerificationController.m */; };
 		F437622A1D303D5200729D54 /* NotificationElement.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43762291D303D5200729D54 /* NotificationElement.xib */; };
 		F437622C1D3413FD00729D54 /* elementParent.m in Sources */ = {isa = PBXBuildFile; fileRef = F437622B1D3413FD00729D54 /* elementParent.m */; };
 		F4DFB51E1D41340000825F41 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DFB51D1D41340000825F41 /* picture.png */; };
@@ -57,6 +58,8 @@
 		F407B8661D2C2EF500D80C1E /* SquareOneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquareOneUITests.m; sourceTree = "<group>"; };
 		F407B8681D2C2EF500D80C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F40EA10E1D46A89200FE248F /* IdeaElement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdeaElement.xib; sourceTree = "<group>"; };
+		F40EA1121D47DEBE00FE248F /* VerificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationController.m; sourceTree = "<group>"; };
+		F40EA1141D47DECA00FE248F /* VerificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerificationController.h; sourceTree = "<group>"; };
 		F43762291D303D5200729D54 /* NotificationElement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationElement.xib; sourceTree = "<group>"; };
 		F437622B1D3413FD00729D54 /* elementParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = elementParent.m; sourceTree = "<group>"; };
 		F437622D1D34140B00729D54 /* elementParent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = elementParent.h; sourceTree = "<group>"; };
@@ -114,16 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				F407B8441D2C2EF400D80C1E /* AppDelegate.h */,
-				F437622B1D3413FD00729D54 /* elementParent.m */,
-				F437622D1D34140B00729D54 /* elementParent.h */,
 				F407B8451D2C2EF400D80C1E /* AppDelegate.m */,
-				F407B8471D2C2EF400D80C1E /* ViewController.h */,
-				F407B8481D2C2EF400D80C1E /* ViewController.m */,
-				F407B84A1D2C2EF400D80C1E /* Main.storyboard */,
-				F4E420081D3730CE004DCCB3 /* testController.h */,
-				F4E420051D373043004DCCB3 /* testController.m */,
-				F43762291D303D5200729D54 /* NotificationElement.xib */,
-				F40EA10E1D46A89200FE248F /* IdeaElement.xib */,
+				F40EA1111D47DCD700FE248F /* ViewControllers */,
+				F40EA1101D47DCB100FE248F /* StoryBoards and Elements */,
 				F4DFB51D1D41340000825F41 /* picture.png */,
 				F407B84D1D2C2EF400D80C1E /* Assets.xcassets */,
 				F407B84F1D2C2EF400D80C1E /* LaunchScreen.storyboard */,
@@ -157,6 +153,31 @@
 				F407B8681D2C2EF500D80C1E /* Info.plist */,
 			);
 			path = SquareOneUITests;
+			sourceTree = "<group>";
+		};
+		F40EA1101D47DCB100FE248F /* StoryBoards and Elements */ = {
+			isa = PBXGroup;
+			children = (
+				F407B84A1D2C2EF400D80C1E /* Main.storyboard */,
+				F43762291D303D5200729D54 /* NotificationElement.xib */,
+				F40EA10E1D46A89200FE248F /* IdeaElement.xib */,
+			);
+			name = "StoryBoards and Elements";
+			sourceTree = "<group>";
+		};
+		F40EA1111D47DCD700FE248F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F407B8471D2C2EF400D80C1E /* ViewController.h */,
+				F407B8481D2C2EF400D80C1E /* ViewController.m */,
+				F40EA1121D47DEBE00FE248F /* VerificationController.m */,
+				F40EA1141D47DECA00FE248F /* VerificationController.h */,
+				F4E420081D3730CE004DCCB3 /* testController.h */,
+				F4E420051D373043004DCCB3 /* testController.m */,
+				F437622B1D3413FD00729D54 /* elementParent.m */,
+				F437622D1D34140B00729D54 /* elementParent.h */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40EA1131D47DEBE00FE248F /* VerificationController.m in Sources */,
 				F4E420061D373043004DCCB3 /* testController.m in Sources */,
 				F407B8491D2C2EF400D80C1E /* ViewController.m in Sources */,
 				F407B8461D2C2EF400D80C1E /* AppDelegate.m in Sources */,
