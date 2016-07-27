@@ -126,7 +126,6 @@
 				F40EA1101D47DCB100FE248F /* StoryBoards and Elements */,
 				F4DFB51D1D41340000825F41 /* picture.png */,
 				F407B84D1D2C2EF400D80C1E /* Assets.xcassets */,
-				F407B84F1D2C2EF400D80C1E /* LaunchScreen.storyboard */,
 				F407B8521D2C2EF400D80C1E /* Info.plist */,
 				F407B8411D2C2EF400D80C1E /* Supporting Files */,
 			);
@@ -165,6 +164,7 @@
 				F407B84A1D2C2EF400D80C1E /* Main.storyboard */,
 				F43762291D303D5200729D54 /* NotificationElement.xib */,
 				F40EA10E1D46A89200FE248F /* IdeaElement.xib */,
+				F407B84F1D2C2EF400D80C1E /* LaunchScreen.storyboard */,
 			);
 			name = "StoryBoards and Elements";
 			sourceTree = "<group>";
