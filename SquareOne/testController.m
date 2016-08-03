@@ -52,7 +52,7 @@
         [subViewX setBackgroundColor:[UIColor blackColor]];
         
         //Adding the views to the superview, and adding constraints
-        [self.view addSubview:subViewX];
+        //[self.view addSubview:subViewX];
         
         [self.view addSubview:loadedNibView];
         [loadedNibView viewWithTag:1].layer.cornerRadius = self.view.frame.size.width * 0.125 * .5;
