@@ -19,43 +19,64 @@
 
 #import "testController.h"
 #import "elementParent.h"
+#import "IdeaElement.h"
 
 @interface testController ()
 
 @end
 
-@implementation testController
-
-    UIView *subViewX;
+@implementation testController {
+    //UIView *subViewX;
     UINib *loadedNib;
+    IdeaElement *loadedNibView;
+    NSLayoutConstraint *heightConstraint;
+    CGFloat height;
+}
 
     - (void)viewWillLayoutSubviews {
         [super viewWillLayoutSubviews];
     }
 
+    - (void)setUpGesture {
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeHeight)];
+        [loadedNibView addGestureRecognizer:tap];
+    }
+
+    - (void)changeHeight {
+        NSLog(@"change height clikce");
+        if(heightConstraint.constant == 115) {
+            height = 210;
+            [heightConstraint setConstant:height];
+        } else {
+            height = 115;
+            [heightConstraint setConstant:height];
+        }
+        [loadedNibView checkHeight:height];
+    }
+
     - (void)loadView {
         [super loadView];
-        NSLog(@"%f", self.view.frame.size.width);
         //how to add subview from interface builder created element
         //variable loadedNib [declared above] of type UIView = *get views from nib named IdeaElement, at index 0
         //loadedNib = [[[NSBundle mainBundle] loadNibNamed:@"IdeaElement" owner:self options:nil] objectAtIndex:0];
         //[loadedNib setTranslatesAutoresizingMaskIntoConstraints:NO];
         
-        loadedNib = [UINib nibWithNibName:@"NotificationElement" bundle:nil];
-        UIView *loadedNibView = [[loadedNib instantiateWithOwner:self.view options:nil] lastObject];
+        height = 115;
+        
+        loadedNib = [UINib nibWithNibName:@"IdeaElement" bundle:nil];
+        loadedNibView = [[loadedNib instantiateWithOwner:self.view options:nil] lastObject];
 
         [loadedNibView setTranslatesAutoresizingMaskIntoConstraints:NO];
         
         //how to add subview from subclass of uiview
         //variable subview of type UIView [declared aboce], alloc ClassName, call initWithFrame and pass it a paramater of tpye CGRect
-        subViewX = [[elementParent alloc] initWithFrame:self.view.frame];
-        [subViewX setBackgroundColor:[UIColor blackColor]];
+        //subViewX = [[elementParent alloc] initWithFrame:self.view.frame];
+        //[subViewX setBackgroundColor:[UIColor blackColor]];
         
         //Adding the views to the superview, and adding constraints
         //[self.view addSubview:subViewX];
         
         [self.view addSubview:loadedNibView];
-        [loadedNibView viewWithTag:1].layer.cornerRadius = self.view.frame.size.width * 0.125 * .5;
         
         NSLayoutConstraint *widthConstraint = [NSLayoutConstraint constraintWithItem:loadedNibView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:1 constant:0];
         
@@ -63,12 +84,14 @@
         
         NSLayoutConstraint *centerYConstraint = [NSLayoutConstraint constraintWithItem:loadedNibView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterY multiplier:1 constant:75];
         
-        NSLayoutConstraint *heightConstraint = [NSLayoutConstraint constraintWithItem:loadedNibView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.view attribute: NSLayoutAttributeWidth multiplier:0.125 constant:10];
+        heightConstraint = [NSLayoutConstraint constraintWithItem:loadedNibView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute: NSLayoutAttributeNotAnAttribute multiplier:1 constant:height];
         
         [self.view addConstraint:widthConstraint];
         [self.view addConstraint:centerXConstraint];
         [self.view addConstraint:heightConstraint];
         [self.view addConstraint:centerYConstraint];
+        [self setUpGesture];
+        
         
     }
 

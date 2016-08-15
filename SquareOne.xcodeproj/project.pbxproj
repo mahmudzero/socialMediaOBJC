@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F407B8431D2C2EF400D80C1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B8421D2C2EF400D80C1E /* main.m */; };
-		F407B8461D2C2EF400D80C1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B8451D2C2EF400D80C1E /* AppDelegate.m */; };
-		F407B8491D2C2EF400D80C1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B8481D2C2EF400D80C1E /* ViewController.m */; };
 		F407B84C1D2C2EF400D80C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F407B84A1D2C2EF400D80C1E /* Main.storyboard */; };
 		F407B84E1D2C2EF400D80C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F407B84D1D2C2EF400D80C1E /* Assets.xcassets */; };
 		F407B8511D2C2EF400D80C1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F407B84F1D2C2EF400D80C1E /* LaunchScreen.storyboard */; };
 		F407B85C1D2C2EF500D80C1E /* SquareOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B85B1D2C2EF500D80C1E /* SquareOneTests.m */; };
 		F407B8671D2C2EF500D80C1E /* SquareOneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B8661D2C2EF500D80C1E /* SquareOneUITests.m */; };
 		F40EA10F1D46A89200FE248F /* IdeaElement.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40EA10E1D46A89200FE248F /* IdeaElement.xib */; };
-		F40EA1131D47DEBE00FE248F /* VerificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40EA1121D47DEBE00FE248F /* VerificationController.m */; };
 		F437622A1D303D5200729D54 /* NotificationElement.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43762291D303D5200729D54 /* NotificationElement.xib */; };
-		F437622C1D3413FD00729D54 /* elementParent.m in Sources */ = {isa = PBXBuildFile; fileRef = F437622B1D3413FD00729D54 /* elementParent.m */; };
-		F45DA7841D48269C00B31AA7 /* IdeaTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45DA7831D48269C00B31AA7 /* IdeaTabController.m */; };
+		F45736A81D555AEB0080A148 /* VerificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40EA1121D47DEBE00FE248F /* VerificationController.m */; };
+		F45736A91D555AF20080A148 /* testController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E420051D373043004DCCB3 /* testController.m */; };
+		F45736AA1D555AF70080A148 /* IdeaTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45DA7831D48269C00B31AA7 /* IdeaTabController.m */; };
+		F45736AB1D555AFC0080A148 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EFBE21D4A766E00089AE6 /* MenuController.m */; };
+		F45736AC1D555B020080A148 /* elementParent.m in Sources */ = {isa = PBXBuildFile; fileRef = F437622B1D3413FD00729D54 /* elementParent.m */; };
+		F45736AD1D555B080080A148 /* IdeaElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EFBD51D4A598D00089AE6 /* IdeaElement.m */; };
+		F45736AE1D555B0F0080A148 /* RegistrationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47AF76F1D4A8BE6000B1EB6 /* RegistrationController.m */; };
+		F45736AF1D555B150080A148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B8451D2C2EF400D80C1E /* AppDelegate.m */; };
+		F45736B01D555B1A0080A148 /* LambdaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EFBE81D4A82C500089AE6 /* LambdaConfig.m */; };
+		F45736B11D555B200080A148 /* SingleRowFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EFBDF1D4A748800089AE6 /* SingleRowFlow.m */; };
+		F45736B21D555B250080A148 /* PersonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EFBD91D4A61F700089AE6 /* PersonElement.m */; };
+		F45736B31D555B4B0080A148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B8421D2C2EF400D80C1E /* main.m */; };
+		F465B9891D5FB07C008F1371 /* IdeaControllerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B9881D5FB07C008F1371 /* IdeaControllerCollectionViewCell.m */; };
+		F465B98D1D5FDCD0008F1371 /* IdeaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B98C1D5FDCD0008F1371 /* IdeaModel.m */; };
 		F47AF7451D4A8A2D000B1EB6 /* AWSAPIGateway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47AF7321D4A8A2D000B1EB6 /* AWSAPIGateway.framework */; };
 		F47AF7461D4A8A2D000B1EB6 /* AWSAPIGateway.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47AF7321D4A8A2D000B1EB6 /* AWSAPIGateway.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F47AF7471D4A8A2D000B1EB6 /* AWSAutoScaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47AF7331D4A8A2D000B1EB6 /* AWSAutoScaling.framework */; };
@@ -58,16 +66,13 @@
 		F47AF7681D4A8A2E000B1EB6 /* AWSSNS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47AF7431D4A8A2D000B1EB6 /* AWSSNS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F47AF7691D4A8A2E000B1EB6 /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47AF7441D4A8A2D000B1EB6 /* AWSSQS.framework */; };
 		F47AF76A1D4A8A2E000B1EB6 /* AWSSQS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47AF7441D4A8A2D000B1EB6 /* AWSSQS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F47AF7701D4A8BE6000B1EB6 /* RegistrationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47AF76F1D4A8BE6000B1EB6 /* RegistrationController.m */; };
-		F47EFBD61D4A598D00089AE6 /* IdeaElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EFBD51D4A598D00089AE6 /* IdeaElement.m */; };
 		F47EFBD81D4A5B9B00089AE6 /* PersonElement.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47EFBD71D4A5B9B00089AE6 /* PersonElement.xib */; };
-		F47EFBDA1D4A61F700089AE6 /* PersonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EFBD91D4A61F700089AE6 /* PersonElement.m */; };
-		F47EFBE01D4A748800089AE6 /* SingleRowFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EFBDF1D4A748800089AE6 /* SingleRowFlow.m */; };
-		F47EFBE31D4A766E00089AE6 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EFBE21D4A766E00089AE6 /* MenuController.m */; };
 		F47EFBE51D4A7CD700089AE6 /* StartupElement.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47EFBE41D4A7CD700089AE6 /* StartupElement.xib */; };
-		F47EFBE91D4A82C500089AE6 /* LambdaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EFBE81D4A82C500089AE6 /* LambdaConfig.m */; };
+		F4A438A81D5AB21800ACA572 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A438A71D5AB21800ACA572 /* LoginController.m */; };
+		F4C30C151D6114CA0031C360 /* StartupElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C30C141D6114CA0031C360 /* StartupElement.m */; };
+		F4C30C181D61150B0031C360 /* ExploreTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C30C171D61150B0031C360 /* ExploreTabController.m */; };
+		F4C30C1E1D6136BE0031C360 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C30C1D1D6136BE0031C360 /* InitialViewController.m */; };
 		F4DFB51E1D41340000825F41 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DFB51D1D41340000825F41 /* picture.png */; };
-		F4E420061D373043004DCCB3 /* testController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E420051D373043004DCCB3 /* testController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,8 +129,6 @@
 		F407B8421D2C2EF400D80C1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F407B8441D2C2EF400D80C1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F407B8451D2C2EF400D80C1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F407B8471D2C2EF400D80C1E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F407B8481D2C2EF400D80C1E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F407B84B1D2C2EF400D80C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F407B84D1D2C2EF400D80C1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F407B8501D2C2EF400D80C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,6 +147,10 @@
 		F437622D1D34140B00729D54 /* elementParent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = elementParent.h; sourceTree = "<group>"; };
 		F45DA7831D48269C00B31AA7 /* IdeaTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdeaTabController.m; sourceTree = "<group>"; };
 		F45DA7851D4826AB00B31AA7 /* IdeaTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IdeaTabController.h; path = ../IdeaTabController.h; sourceTree = "<group>"; };
+		F465B9871D5FB07C008F1371 /* IdeaControllerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdeaControllerCollectionViewCell.h; sourceTree = "<group>"; };
+		F465B9881D5FB07C008F1371 /* IdeaControllerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdeaControllerCollectionViewCell.m; sourceTree = "<group>"; };
+		F465B98B1D5FDCD0008F1371 /* IdeaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdeaModel.h; sourceTree = "<group>"; };
+		F465B98C1D5FDCD0008F1371 /* IdeaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdeaModel.m; sourceTree = "<group>"; };
 		F47AF7321D4A8A2D000B1EB6 /* AWSAPIGateway.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAPIGateway.framework; sourceTree = "<group>"; };
 		F47AF7331D4A8A2D000B1EB6 /* AWSAutoScaling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAutoScaling.framework; sourceTree = "<group>"; };
 		F47AF7341D4A8A2D000B1EB6 /* AWSCloudWatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCloudWatch.framework; sourceTree = "<group>"; };
@@ -177,6 +184,14 @@
 		F47EFBE41D4A7CD700089AE6 /* StartupElement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartupElement.xib; sourceTree = "<group>"; };
 		F47EFBE71D4A82C500089AE6 /* LambdaConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LambdaConfig.h; sourceTree = "<group>"; };
 		F47EFBE81D4A82C500089AE6 /* LambdaConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LambdaConfig.m; sourceTree = "<group>"; };
+		F4A438A61D5AB21800ACA572 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		F4A438A71D5AB21800ACA572 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		F4C30C131D6114CA0031C360 /* StartupElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartupElement.h; sourceTree = "<group>"; };
+		F4C30C141D6114CA0031C360 /* StartupElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartupElement.m; sourceTree = "<group>"; };
+		F4C30C161D61150B0031C360 /* ExploreTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreTabController.h; sourceTree = "<group>"; };
+		F4C30C171D61150B0031C360 /* ExploreTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTabController.m; sourceTree = "<group>"; };
+		F4C30C1C1D6136BE0031C360 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		F4C30C1D1D6136BE0031C360 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		F4DFB51D1D41340000825F41 /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = picture.png; path = ../../../picture.png; sourceTree = "<group>"; };
 		F4E420051D373043004DCCB3 /* testController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testController.m; sourceTree = "<group>"; };
 		F4E420081D3730CE004DCCB3 /* testController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testController.h; sourceTree = "<group>"; };
@@ -250,10 +265,12 @@
 		F407B8401D2C2EF400D80C1E /* SquareOne */ = {
 			isa = PBXGroup;
 			children = (
+				F465B98A1D5FDC9E008F1371 /* DataModels */,
 				F407B8441D2C2EF400D80C1E /* AppDelegate.h */,
 				F407B8451D2C2EF400D80C1E /* AppDelegate.m */,
 				F47EFBE61D4A825500089AE6 /* AWS/Lambda */,
 				F47EFBDC1D4A73F700089AE6 /* Custom UISubclasses */,
+				F465B9801D5FAF5E008F1371 /* Delegates */,
 				F45DA7871D4826EA00B31AA7 /* Element Classes */,
 				F40EA1111D47DCD700FE248F /* ViewControllers */,
 				F40EA1101D47DCB100FE248F /* StoryBoards and Elements */,
@@ -307,18 +324,9 @@
 		F40EA1111D47DCD700FE248F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F407B8471D2C2EF400D80C1E /* ViewController.h */,
-				F407B8481D2C2EF400D80C1E /* ViewController.m */,
-				F40EA1141D47DECA00FE248F /* VerificationController.h */,
-				F40EA1121D47DEBE00FE248F /* VerificationController.m */,
-				F4E420081D3730CE004DCCB3 /* testController.h */,
-				F4E420051D373043004DCCB3 /* testController.m */,
-				F45DA7851D4826AB00B31AA7 /* IdeaTabController.h */,
-				F45DA7831D48269C00B31AA7 /* IdeaTabController.m */,
-				F47EFBE11D4A766E00089AE6 /* MenuController.h */,
-				F47EFBE21D4A766E00089AE6 /* MenuController.m */,
-				F47AF76E1D4A8BE6000B1EB6 /* RegistrationController.h */,
-				F47AF76F1D4A8BE6000B1EB6 /* RegistrationController.m */,
+				F4C30C191D61151F0031C360 /* TabControllers */,
+				F4C30C1A1D6115320031C360 /* LoginRegisterControllers */,
+				F4C30C1B1D61154E0031C360 /* TestControllers */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -332,8 +340,28 @@
 				F47EFBD51D4A598D00089AE6 /* IdeaElement.m */,
 				F47EFBDB1D4A620400089AE6 /* PersonElement.h */,
 				F47EFBD91D4A61F700089AE6 /* PersonElement.m */,
+				F4C30C131D6114CA0031C360 /* StartupElement.h */,
+				F4C30C141D6114CA0031C360 /* StartupElement.m */,
 			);
 			name = "Element Classes";
+			sourceTree = "<group>";
+		};
+		F465B9801D5FAF5E008F1371 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F465B9871D5FB07C008F1371 /* IdeaControllerCollectionViewCell.h */,
+				F465B9881D5FB07C008F1371 /* IdeaControllerCollectionViewCell.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		F465B98A1D5FDC9E008F1371 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				F465B98B1D5FDCD0008F1371 /* IdeaModel.h */,
+				F465B98C1D5FDCD0008F1371 /* IdeaModel.m */,
+			);
+			name = DataModels;
 			sourceTree = "<group>";
 		};
 		F47AF76C1D4A8A3A000B1EB6 /* Framkeworks */ = {
@@ -378,6 +406,43 @@
 				F47EFBE81D4A82C500089AE6 /* LambdaConfig.m */,
 			);
 			name = AWS/Lambda;
+			sourceTree = "<group>";
+		};
+		F4C30C191D61151F0031C360 /* TabControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4C30C161D61150B0031C360 /* ExploreTabController.h */,
+				F4C30C171D61150B0031C360 /* ExploreTabController.m */,
+				F45DA7851D4826AB00B31AA7 /* IdeaTabController.h */,
+				F45DA7831D48269C00B31AA7 /* IdeaTabController.m */,
+			);
+			name = TabControllers;
+			sourceTree = "<group>";
+		};
+		F4C30C1A1D6115320031C360 /* LoginRegisterControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4C30C1C1D6136BE0031C360 /* InitialViewController.h */,
+				F4C30C1D1D6136BE0031C360 /* InitialViewController.m */,
+				F4A438A61D5AB21800ACA572 /* LoginController.h */,
+				F4A438A71D5AB21800ACA572 /* LoginController.m */,
+				F47AF76E1D4A8BE6000B1EB6 /* RegistrationController.h */,
+				F47AF76F1D4A8BE6000B1EB6 /* RegistrationController.m */,
+				F40EA1141D47DECA00FE248F /* VerificationController.h */,
+				F40EA1121D47DEBE00FE248F /* VerificationController.m */,
+			);
+			name = LoginRegisterControllers;
+			sourceTree = "<group>";
+		};
+		F4C30C1B1D61154E0031C360 /* TestControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F47EFBE11D4A766E00089AE6 /* MenuController.h */,
+				F47EFBE21D4A766E00089AE6 /* MenuController.m */,
+				F4E420081D3730CE004DCCB3 /* testController.h */,
+				F4E420051D373043004DCCB3 /* testController.m */,
+			);
+			name = TestControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,19 +599,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47EFBE01D4A748800089AE6 /* SingleRowFlow.m in Sources */,
-				F40EA1131D47DEBE00FE248F /* VerificationController.m in Sources */,
-				F4E420061D373043004DCCB3 /* testController.m in Sources */,
-				F47AF7701D4A8BE6000B1EB6 /* RegistrationController.m in Sources */,
-				F407B8491D2C2EF400D80C1E /* ViewController.m in Sources */,
-				F407B8461D2C2EF400D80C1E /* AppDelegate.m in Sources */,
-				F47EFBDA1D4A61F700089AE6 /* PersonElement.m in Sources */,
-				F47EFBE31D4A766E00089AE6 /* MenuController.m in Sources */,
-				F437622C1D3413FD00729D54 /* elementParent.m in Sources */,
-				F47EFBE91D4A82C500089AE6 /* LambdaConfig.m in Sources */,
-				F47EFBD61D4A598D00089AE6 /* IdeaElement.m in Sources */,
-				F45DA7841D48269C00B31AA7 /* IdeaTabController.m in Sources */,
-				F407B8431D2C2EF400D80C1E /* main.m in Sources */,
+				F45736B31D555B4B0080A148 /* main.m in Sources */,
+				F45736B21D555B250080A148 /* PersonElement.m in Sources */,
+				F45736B11D555B200080A148 /* SingleRowFlow.m in Sources */,
+				F45736B01D555B1A0080A148 /* LambdaConfig.m in Sources */,
+				F4C30C151D6114CA0031C360 /* StartupElement.m in Sources */,
+				F45736AF1D555B150080A148 /* AppDelegate.m in Sources */,
+				F45736AE1D555B0F0080A148 /* RegistrationController.m in Sources */,
+				F465B9891D5FB07C008F1371 /* IdeaControllerCollectionViewCell.m in Sources */,
+				F45736AD1D555B080080A148 /* IdeaElement.m in Sources */,
+				F4A438A81D5AB21800ACA572 /* LoginController.m in Sources */,
+				F45736AC1D555B020080A148 /* elementParent.m in Sources */,
+				F465B98D1D5FDCD0008F1371 /* IdeaModel.m in Sources */,
+				F45736AB1D555AFC0080A148 /* MenuController.m in Sources */,
+				F4C30C181D61150B0031C360 /* ExploreTabController.m in Sources */,
+				F45736AA1D555AF70080A148 /* IdeaTabController.m in Sources */,
+				F45736A91D555AF20080A148 /* testController.m in Sources */,
+				F4C30C1E1D6136BE0031C360 /* InitialViewController.m in Sources */,
+				F45736A81D555AEB0080A148 /* VerificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,6 +757,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -698,6 +769,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MahmudAhmad.SquareOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SquareOne/SquareOne-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -706,6 +779,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -717,6 +791,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MahmudAhmad.SquareOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SquareOne/SquareOne-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -13,11 +13,17 @@
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    BOOL isLoggedIn;
+}
 
 
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
         // Override point for customization after application launch.
+        isLoggedIn = YES;
+        if(isLoggedIn) {
+            [self.window.rootViewController performSegueWithIdentifier:@"goToTabbedController" sender:self];
+        }
         AWSCognitoCredentialsProvider *credentialsProvider = [[AWSCognitoCredentialsProvider alloc] initWithRegionType:AWSRegionUSEast1
                                                                                                         identityPoolId:@"us-east-1:d77fb046-c1fd-4617-b0b2-52a625c8c0c1"];
         

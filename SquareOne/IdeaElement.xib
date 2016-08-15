@@ -5,26 +5,26 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IdeaElement"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="Gzd-uj-Gmb">
+        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="Gzd-uj-Gmb" customClass="IdeaElement">
             <rect key="frame" x="0.0" y="0.0" width="640" height="210"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2B-N4-NQq">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2B-N4-NQq">
                     <rect key="frame" x="8" y="8" width="566" height="80"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="sY7-HW-WsA"/>
                     </constraints>
-                    <string key="text">This is a wall of text to test the height of the box. Lorem ipsum dolor sis nit. I don't know what I'm typing right now. This is just to test. One Two</string>
+                    <string key="text">This is a wall of text to test the height of the box. Lorem ipsum dolor sis nit. I don't know what I'm typing right now. This is just to test. One Two More wrods</string>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-vF-Tum" userLabel="Likes Label">
                     <rect key="frame" x="586" y="66" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ENZ-dD-RvN">
@@ -45,7 +45,7 @@
                         <constraint firstAttribute="width" constant="150" id="llr-Eq-rw8"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtl-Mw-Krl" userLabel="Title">
@@ -54,7 +54,7 @@
                         <constraint firstAttribute="width" constant="150" id="hOp-4F-6n9"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF4-gC-BBD" userLabel="Likes">
@@ -72,6 +72,9 @@
                         <constraint firstAttribute="height" constant="30" id="yyh-dY-C0A"/>
                     </constraints>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="commentsClicked:" destination="Gzd-uj-Gmb" eventType="touchUpInside" id="AmX-FA-01W"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbJ-tJ-oQi" userLabel="Message">
                     <rect key="frame" x="544" y="147" width="30" height="30"/>
@@ -80,6 +83,9 @@
                         <constraint firstAttribute="height" constant="30" id="znW-JZ-fBV"/>
                     </constraints>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="messageClicked:" destination="Gzd-uj-Gmb" eventType="touchUpInside" id="50N-zB-FaI"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-CQ-a5g">
                     <rect key="frame" x="592" y="185" width="30" height="15"/>
@@ -88,17 +94,18 @@
                         <constraint firstAttribute="height" constant="15" id="rKZ-79-A6e"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gn5-Yl-NDt" userLabel="Comments Label">
                     <rect key="frame" x="8" y="94" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="xF4-gC-BBD" firstAttribute="top" secondItem="Gzd-uj-Gmb" secondAttribute="top" constant="8" id="6d9-Zp-igb"/>
                 <constraint firstAttribute="bottom" secondItem="F4n-CQ-a5g" secondAttribute="bottom" constant="10" id="9Rp-zw-NkT"/>
@@ -124,7 +131,18 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="563" y="143"/>
+            <connections>
+                <outlet property="commentsButton" destination="4xZ-na-se5" id="hdP-3N-qMO"/>
+                <outlet property="likeButton" destination="xF4-gC-BBD" id="3PH-SI-SzZ"/>
+                <outlet property="likesLabel" destination="Z3K-vF-Tum" id="Zmv-O0-1EQ"/>
+                <outlet property="messageUserButton" destination="YbJ-tJ-oQi" id="cSq-hs-gyk"/>
+                <outlet property="nameLabel" destination="wxT-3B-1Ie" id="NlY-Gj-BbC"/>
+                <outlet property="numberOfComments" destination="F4n-CQ-a5g" id="EFf-Sj-aex"/>
+                <outlet property="personTitleLable" destination="jtl-Mw-Krl" id="W1d-6F-vJ0"/>
+                <outlet property="profileImage" destination="ENZ-dD-RvN" id="dy6-un-c0c"/>
+                <outlet property="textView" destination="p2B-N4-NQq" id="Hjj-0R-VXB"/>
+            </connections>
+            <point key="canvasLocation" x="472" y="-89"/>
         </view>
     </objects>
 </document>

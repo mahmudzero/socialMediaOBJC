@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 @import UIKit;
 
-@interface testController : UIViewController
+@interface testController : UIViewController {
+
+}
 
 
 @end

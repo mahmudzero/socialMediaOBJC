@@ -31,6 +31,10 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srG-3B-JoY">
+                    <rect key="frame" x="297" y="20" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.94999999999999996" alpha="0.84999999999999998" colorSpace="calibratedWhite"/>
             <constraints>
@@ -40,14 +44,16 @@
                 <constraint firstItem="GCr-rn-nQ1" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1/8" id="EQS-Yp-EOu"/>
                 <constraint firstAttribute="trailing" secondItem="JPI-DX-f73" secondAttribute="trailing" constant="347" id="VIS-o3-n6n"/>
                 <constraint firstItem="1tU-FO-r9Z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-10" id="bih-f2-Xv2"/>
+                <constraint firstAttribute="bottom" secondItem="srG-3B-JoY" secondAttribute="bottom" id="fc4-Rc-ZYe"/>
                 <constraint firstAttribute="trailing" secondItem="1tU-FO-r9Z" secondAttribute="trailing" constant="8" id="gLd-Up-cCn"/>
                 <constraint firstItem="1tU-FO-r9Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="93" id="mSd-dd-Aov"/>
                 <constraint firstItem="JPI-DX-f73" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="93" id="ngT-HL-Fzg"/>
                 <constraint firstItem="JPI-DX-f73" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="10" id="q7E-Ir-R81"/>
+                <constraint firstItem="srG-3B-JoY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tgM-R7-1XX"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="513" y="170"/>
+            <point key="canvasLocation" x="538" y="319"/>
         </view>
     </objects>
     <resources>

@@ -11,19 +11,19 @@
 
 @implementation PersonElement
 
--(id)initWithCoder:(NSCoder *)aDecoder {
-    
-    self = [super initWithCoder:aDecoder];
-    
-    return self;
-}
+    - (id)initWithCoder:(NSCoder *)aDecoder {
+        
+        self = [super initWithCoder:aDecoder];
+        
+        return self;
+    }
 
--(id)initWithFrame:(CGRect)frameToBe {
-    
-    self = [super initWithFrame:frameToBe];
-    
-    return self;
-}
+    - (id)initWithFrame:(CGRect)frameToBe {
+        
+        self = [super initWithFrame:frameToBe];
+        
+        return self;
+    }
 
 
 @end

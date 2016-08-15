@@ -10,6 +10,9 @@
 #import <AWSLambda/AWSLambda.h>
 #import <AWSCore/AWSCore.h>
 
+#define keyboard_offset 80.0
+static __weak id currentFirstResponder;
+
 @interface RegistrationController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *email;
@@ -18,16 +21,16 @@
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameField;
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
-
+@property (weak, nonatomic) IBOutlet UIView *superView;
 
 
 @end
 
-@implementation RegistrationController
-
+@implementation RegistrationController {
     NSNumber *successStatus;
     UIAlertController *alert;
     UIAlertAction *action;
+}
 
     - (IBAction)register:(id)sender {
         NSDictionary *parameters = @{@"email": _email.text, @"password": _password.text};
@@ -103,6 +106,39 @@
         return NO;
     }
 
+    - (void)setNewRectWithAnimation:(CGRect *)rect withDuration:(double)timeInterval {
+        NSTimeInterval *nsInterval = &timeInterval;
+        [UIView beginAnimations:nil context:NULL];
+        self.view.frame = *(rect);
+        [UIView setAnimationDuration:*nsInterval];
+        [UIView commitAnimations];
+    }
+
+    - (void)textFieldDidBeginEditing:(UITextField *)textField {
+        CGRect rect = self.view.frame;
+        if([textField isEqual:_email] || [textField isEqual:_password] || [textField isEqual:_confirmPassowrd]) {
+            if(self.view.frame.origin.y >= 0) {
+                rect.origin.y -= 175;
+                [self setNewRectWithAnimation:&rect withDuration:5.0];
+            }
+        }
+        if([textField isEqual:_firstNameField] || [textField isEqual:_lastNameField]) {
+            if(self.view.frame.origin.y < 0) {
+                rect.origin.y += 175;
+                [self setNewRectWithAnimation:&rect withDuration:5.0];
+            }
+        }
+    }
+
+    - (void)textFieldDidEndEditing:(UITextField *)textField {
+        CGRect rect = self.view.frame;
+        if(self.view.frame.origin.y < 0) {
+            rect.origin.y += 175;
+            [self setNewRectWithAnimation:&rect withDuration:5.0];
+        }
+    }
+
+
     - (void)changeFirstResponder:(UITextField *)responderOne toResponder:(UITextField *)responderTwo {
         [responderOne resignFirstResponder];
         [responderTwo becomeFirstResponder];
@@ -125,9 +161,23 @@
         [self register:_registerButton];
     }
 
+    - (void)dismissKeyboard {
+        [self.view endEditing:YES];
+    }
+
+    - (void)setSuperVieWGestureRecognizers {
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+        UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+        [swipeDown setDirection:UISwipeGestureRecognizerDirectionDown];
+        [_superView addGestureRecognizer:swipeDown];
+        [_superView addGestureRecognizer:tap];
+    }
+
+
     - (void)viewDidLoad {
         [super viewDidLoad];
         // Do any additional setup after loading the view.
+        [self setSuperVieWGestureRecognizers];
     }
 
     - (void)didReceiveMemoryWarning {

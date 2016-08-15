@@ -10,14 +10,14 @@
 
 @implementation elementParent
 
-    -(id)initWithCoder:(NSCoder *)aDecoder {
+    - (id)initWithCoder:(NSCoder *)aDecoder {
         
         self = [super initWithCoder:aDecoder];
         
         return self;
     }
 
-    -(id)initWithFrame:(CGRect)frameToBe {
+    - (id)initWithFrame:(CGRect)frameToBe {
     
         self = [super initWithFrame:frameToBe];
     

@@ -10,5 +10,8 @@
 
 @interface IdeaElement : UIView
 
+    - (void)checkHeight:(int)height;
+
+    - (void)assignValuesForElements:(NSString *)userId withUserNamed:(NSString *)name withText:(NSString *)text withImageURL:(NSString *)imageName withNumLikes:(int)numLikes withNumComments:(int)numComments;
 
 @end
