@@ -11,11 +11,18 @@
 
 @interface IdeaControllerCollectionViewCell ()
 
-@property (strong, nonatomic) IBOutlet IdeaElement *ideaElement;
+    @property (strong, nonatomic) IBOutlet IdeaElement *ideaElement;
 
 @end
 
 @implementation IdeaControllerCollectionViewCell
+
+    - (IBAction)goToComments:(id)sender {
+        
+        if (self.cellDelegate && [self.cellDelegate respondsToSelector:@selector(goToCommentsWasPressed:)]) {
+            [self.cellDelegate goToCommentsWasPressed:self];
+        }
+    }
 
     - (void)setIdeaValues:(NSString *)userId withUserNamed:(NSString *)name withText:(NSString *)text withImageURL:(NSString *)imageNamed withNumLikes:(int)numLikes withNumComments:(int)numComments {
         [_ideaElement assignValuesForElements:userId withUserNamed:name withText:text withImageURL:imageNamed withNumLikes:numLikes withNumComments:numComments];

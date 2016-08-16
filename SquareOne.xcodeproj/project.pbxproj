@@ -72,7 +72,22 @@
 		F4C30C151D6114CA0031C360 /* StartupElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C30C141D6114CA0031C360 /* StartupElement.m */; };
 		F4C30C181D61150B0031C360 /* ExploreTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C30C171D61150B0031C360 /* ExploreTabController.m */; };
 		F4C30C1E1D6136BE0031C360 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C30C1D1D6136BE0031C360 /* InitialViewController.m */; };
-		F4DFB51E1D41340000825F41 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DFB51D1D41340000825F41 /* picture.png */; };
+		F4D5FDA81D6224980086E91E /* exploreTab-data.json in Resources */ = {isa = PBXBuildFile; fileRef = F4D5FDA71D6224980086E91E /* exploreTab-data.json */; };
+		F4D5FDAC1D6225A70086E91E /* PersonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D5FDAB1D6225A70086E91E /* PersonCollectionViewCell.m */; };
+		F4D5FDAE1D622DE70086E91E /* AddNewIdea.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4D5FDAD1D622DE70086E91E /* AddNewIdea.xib */; };
+		F4D5FDB11D6235610086E91E /* AddNewIdeaElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D5FDB01D6235610086E91E /* AddNewIdeaElement.m */; };
+		F4ECA2101D627AE900944A19 /* comments-testing.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA20F1D627AE900944A19 /* comments-testing.xib */; };
+		F4ECA2331D628EDE00944A19 /* Bulb.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA2281D628EDE00944A19 /* Bulb.png */; };
+		F4ECA2341D628EDE00944A19 /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA2291D628EDE00944A19 /* comment.png */; };
+		F4ECA2351D628EDE00944A19 /* Compass.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA22A1D628EDE00944A19 /* Compass.png */; };
+		F4ECA2361D628EDE00944A19 /* Detail Disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA22B1D628EDE00944A19 /* Detail Disclosure.png */; };
+		F4ECA2371D628EDE00944A19 /* Edit Button.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA22C1D628EDE00944A19 /* Edit Button.png */; };
+		F4ECA2381D628EDE00944A19 /* follow.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA22D1D628EDE00944A19 /* follow.png */; };
+		F4ECA2391D628EDE00944A19 /* Idea.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA22E1D628EDE00944A19 /* Idea.png */; };
+		F4ECA23A1D628EDE00944A19 /* Messaging.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA22F1D628EDE00944A19 /* Messaging.png */; };
+		F4ECA23B1D628EDE00944A19 /* navigation drawer.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA2301D628EDE00944A19 /* navigation drawer.png */; };
+		F4ECA23C1D628EDE00944A19 /* Notification.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA2311D628EDE00944A19 /* Notification.png */; };
+		F4ECA23D1D628EDE00944A19 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA2321D628EDE00944A19 /* search.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +140,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		913D502D2563A8B729EAA3BB /* Pods-SquareOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquareOne/Pods-SquareOne.release.xcconfig"; sourceTree = "<group>"; };
+		A7A8A6A57C758C90D0532674 /* Pods-SquareOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquareOne/Pods-SquareOne.debug.xcconfig"; sourceTree = "<group>"; };
 		F407B83E1D2C2EF400D80C1E /* SquareOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F407B8421D2C2EF400D80C1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F407B8441D2C2EF400D80C1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -192,9 +209,26 @@
 		F4C30C171D61150B0031C360 /* ExploreTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTabController.m; sourceTree = "<group>"; };
 		F4C30C1C1D6136BE0031C360 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
 		F4C30C1D1D6136BE0031C360 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
-		F4DFB51D1D41340000825F41 /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = picture.png; path = ../../../picture.png; sourceTree = "<group>"; };
+		F4D5FDA71D6224980086E91E /* exploreTab-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "exploreTab-data.json"; sourceTree = "<group>"; };
+		F4D5FDAA1D6225A70086E91E /* PersonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCollectionViewCell.h; sourceTree = "<group>"; };
+		F4D5FDAB1D6225A70086E91E /* PersonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCollectionViewCell.m; sourceTree = "<group>"; };
+		F4D5FDAD1D622DE70086E91E /* AddNewIdea.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewIdea.xib; sourceTree = "<group>"; };
+		F4D5FDAF1D6235610086E91E /* AddNewIdeaElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewIdeaElement.h; sourceTree = "<group>"; };
+		F4D5FDB01D6235610086E91E /* AddNewIdeaElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewIdeaElement.m; sourceTree = "<group>"; };
 		F4E420051D373043004DCCB3 /* testController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testController.m; sourceTree = "<group>"; };
 		F4E420081D3730CE004DCCB3 /* testController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testController.h; sourceTree = "<group>"; };
+		F4ECA20F1D627AE900944A19 /* comments-testing.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "comments-testing.xib"; sourceTree = "<group>"; };
+		F4ECA2281D628EDE00944A19 /* Bulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bulb.png; sourceTree = "<group>"; };
+		F4ECA2291D628EDE00944A19 /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment.png; sourceTree = "<group>"; };
+		F4ECA22A1D628EDE00944A19 /* Compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Compass.png; sourceTree = "<group>"; };
+		F4ECA22B1D628EDE00944A19 /* Detail Disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Detail Disclosure.png"; sourceTree = "<group>"; };
+		F4ECA22C1D628EDE00944A19 /* Edit Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Edit Button.png"; sourceTree = "<group>"; };
+		F4ECA22D1D628EDE00944A19 /* follow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = follow.png; sourceTree = "<group>"; };
+		F4ECA22E1D628EDE00944A19 /* Idea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Idea.png; sourceTree = "<group>"; };
+		F4ECA22F1D628EDE00944A19 /* Messaging.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Messaging.png; sourceTree = "<group>"; };
+		F4ECA2301D628EDE00944A19 /* navigation drawer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation drawer.png"; sourceTree = "<group>"; };
+		F4ECA2311D628EDE00944A19 /* Notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Notification.png; sourceTree = "<group>"; };
+		F4ECA2321D628EDE00944A19 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +275,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39FE7B2944686485B9982F3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8A6A57C758C90D0532674 /* Pods-SquareOne.debug.xcconfig */,
+				913D502D2563A8B729EAA3BB /* Pods-SquareOne.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F407B8351D2C2EF400D80C1E = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +292,7 @@
 				F407B8651D2C2EF500D80C1E /* SquareOneUITests */,
 				F407B83F1D2C2EF400D80C1E /* Products */,
 				F47AF76C1D4A8A3A000B1EB6 /* Framkeworks */,
+				39FE7B2944686485B9982F3D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -274,8 +318,9 @@
 				F45DA7871D4826EA00B31AA7 /* Element Classes */,
 				F40EA1111D47DCD700FE248F /* ViewControllers */,
 				F40EA1101D47DCB100FE248F /* StoryBoards and Elements */,
-				F4DFB51D1D41340000825F41 /* picture.png */,
 				F407B84D1D2C2EF400D80C1E /* Assets.xcassets */,
+				F4ECA2271D62877C00944A19 /* Assets */,
+				F4D5FDA91D6224AB0086E91E /* json */,
 				F407B8521D2C2EF400D80C1E /* Info.plist */,
 				F407B8411D2C2EF400D80C1E /* Supporting Files */,
 			);
@@ -317,6 +362,8 @@
 				F47EFBE41D4A7CD700089AE6 /* StartupElement.xib */,
 				F40EA10E1D46A89200FE248F /* IdeaElement.xib */,
 				F407B84F1D2C2EF400D80C1E /* LaunchScreen.storyboard */,
+				F4D5FDAD1D622DE70086E91E /* AddNewIdea.xib */,
+				F4ECA20F1D627AE900944A19 /* comments-testing.xib */,
 			);
 			name = "StoryBoards and Elements";
 			sourceTree = "<group>";
@@ -334,6 +381,8 @@
 		F45DA7871D4826EA00B31AA7 /* Element Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F4D5FDAF1D6235610086E91E /* AddNewIdeaElement.h */,
+				F4D5FDB01D6235610086E91E /* AddNewIdeaElement.m */,
 				F437622D1D34140B00729D54 /* elementParent.h */,
 				F437622B1D3413FD00729D54 /* elementParent.m */,
 				F47EFBD41D4A596B00089AE6 /* IdeaElement.h */,
@@ -351,6 +400,8 @@
 			children = (
 				F465B9871D5FB07C008F1371 /* IdeaControllerCollectionViewCell.h */,
 				F465B9881D5FB07C008F1371 /* IdeaControllerCollectionViewCell.m */,
+				F4D5FDAA1D6225A70086E91E /* PersonCollectionViewCell.h */,
+				F4D5FDAB1D6225A70086E91E /* PersonCollectionViewCell.m */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -445,6 +496,32 @@
 			name = TestControllers;
 			sourceTree = "<group>";
 		};
+		F4D5FDA91D6224AB0086E91E /* json */ = {
+			isa = PBXGroup;
+			children = (
+				F4D5FDA71D6224980086E91E /* exploreTab-data.json */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		F4ECA2271D62877C00944A19 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECA2281D628EDE00944A19 /* Bulb.png */,
+				F4ECA2291D628EDE00944A19 /* comment.png */,
+				F4ECA22A1D628EDE00944A19 /* Compass.png */,
+				F4ECA22B1D628EDE00944A19 /* Detail Disclosure.png */,
+				F4ECA22C1D628EDE00944A19 /* Edit Button.png */,
+				F4ECA22D1D628EDE00944A19 /* follow.png */,
+				F4ECA22E1D628EDE00944A19 /* Idea.png */,
+				F4ECA22F1D628EDE00944A19 /* Messaging.png */,
+				F4ECA2301D628EDE00944A19 /* navigation drawer.png */,
+				F4ECA2311D628EDE00944A19 /* Notification.png */,
+				F4ECA2321D628EDE00944A19 /* search.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -452,11 +529,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F407B86B1D2C2EF500D80C1E /* Build configuration list for PBXNativeTarget "SquareOne" */;
 			buildPhases = (
+				130548EA03FEFC2091B787D0 /* [CP] Check Pods Manifest.lock */,
 				F407B83A1D2C2EF400D80C1E /* Sources */,
 				F407B83B1D2C2EF400D80C1E /* Frameworks */,
 				F407B83C1D2C2EF400D80C1E /* Resources */,
 				F47AF76B1D4A8A2E000B1EB6 /* Embed Frameworks */,
 				F47AF76D1D4A8A5B000B1EB6 /* ShellScript */,
+				32C7279545E996E9EA84CE16 /* [CP] Embed Pods Frameworks */,
+				F667019DA8808E8FF616C3FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -551,13 +631,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4ECA23A1D628EDE00944A19 /* Messaging.png in Resources */,
+				F4ECA2381D628EDE00944A19 /* follow.png in Resources */,
 				F47EFBE51D4A7CD700089AE6 /* StartupElement.xib in Resources */,
+				F4ECA2341D628EDE00944A19 /* comment.png in Resources */,
+				F4ECA2361D628EDE00944A19 /* Detail Disclosure.png in Resources */,
+				F4D5FDA81D6224980086E91E /* exploreTab-data.json in Resources */,
 				F47EFBD81D4A5B9B00089AE6 /* PersonElement.xib in Resources */,
 				F407B8511D2C2EF400D80C1E /* LaunchScreen.storyboard in Resources */,
 				F437622A1D303D5200729D54 /* NotificationElement.xib in Resources */,
 				F407B84E1D2C2EF400D80C1E /* Assets.xcassets in Resources */,
-				F4DFB51E1D41340000825F41 /* picture.png in Resources */,
+				F4ECA23D1D628EDE00944A19 /* search.png in Resources */,
+				F4ECA23C1D628EDE00944A19 /* Notification.png in Resources */,
+				F4ECA2101D627AE900944A19 /* comments-testing.xib in Resources */,
+				F4ECA2371D628EDE00944A19 /* Edit Button.png in Resources */,
+				F4ECA2331D628EDE00944A19 /* Bulb.png in Resources */,
+				F4D5FDAE1D622DE70086E91E /* AddNewIdea.xib in Resources */,
 				F407B84C1D2C2EF400D80C1E /* Main.storyboard in Resources */,
+				F4ECA2391D628EDE00944A19 /* Idea.png in Resources */,
+				F4ECA2351D628EDE00944A19 /* Compass.png in Resources */,
+				F4ECA23B1D628EDE00944A19 /* navigation drawer.png in Resources */,
 				F40EA10F1D46A89200FE248F /* IdeaElement.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +672,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		130548EA03FEFC2091B787D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		32C7279545E996E9EA84CE16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquareOne/Pods-SquareOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F47AF76D1D4A8A5B000B1EB6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -591,6 +714,21 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "Shell /bin/sh\n\nbash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"\n\nShow environment variables in build log: Checked\nRun script only when installing: Not checked\n\nInput Files: Empty\nOutput Files: Empty";
+		};
+		F667019DA8808E8FF616C3FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquareOne/Pods-SquareOne-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -609,6 +747,7 @@
 				F465B9891D5FB07C008F1371 /* IdeaControllerCollectionViewCell.m in Sources */,
 				F45736AD1D555B080080A148 /* IdeaElement.m in Sources */,
 				F4A438A81D5AB21800ACA572 /* LoginController.m in Sources */,
+				F4D5FDAC1D6225A70086E91E /* PersonCollectionViewCell.m in Sources */,
 				F45736AC1D555B020080A148 /* elementParent.m in Sources */,
 				F465B98D1D5FDCD0008F1371 /* IdeaModel.m in Sources */,
 				F45736AB1D555AFC0080A148 /* MenuController.m in Sources */,
@@ -616,6 +755,7 @@
 				F45736AA1D555AF70080A148 /* IdeaTabController.m in Sources */,
 				F45736A91D555AF20080A148 /* testController.m in Sources */,
 				F4C30C1E1D6136BE0031C360 /* InitialViewController.m in Sources */,
+				F4D5FDB11D6235610086E91E /* AddNewIdeaElement.m in Sources */,
 				F45736A81D555AEB0080A148 /* VerificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -755,6 +895,7 @@
 		};
 		F407B86C1D2C2EF500D80C1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7A8A6A57C758C90D0532674 /* Pods-SquareOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -777,6 +918,7 @@
 		};
 		F407B86D1D2C2EF500D80C1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913D502D2563A8B729EAA3BB /* Pods-SquareOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -10,5 +10,6 @@
 
 @interface PersonElement : UIView
 
+    - (void)assignValuesForElements:(NSString *)userId withUserNamed:(NSString *)name withUserTitle:(NSString *)title withText:(NSString *)text withImageURL:(NSString *)imageName withSkillImage:(NSString *)skillImageName;
 
 @end

@@ -36,14 +36,10 @@
             isLiked = YES;
             numOfLikes += 1;
             [_likesLabel setTextColor:[UIColor colorWithRed:0.0f/255.0f green:165.0f/255.0f blue:172.0f/255.0f alpha:1]];
-            [_likeButton setBackgroundColor:[UIColor whiteColor]];
-            [_likeButton setTitleColor:[UIColor colorWithRed:0.0f/255.0f green:165.0f/255.0f blue:172.0f/255.0f alpha:1] forState:UIControlStateNormal];
         } else {
             isLiked = NO;
             numOfLikes -= 1;
             [_likesLabel setTextColor:[UIColor colorWithRed:152.0f/255.0f green:165.0f/255.0f blue:172.0f/255.0f alpha:1]];
-            [_likeButton setBackgroundColor:[UIColor colorWithRed:0.0f/255.0f green:165.0f/255.0f blue:172.0f/255.0f alpha:1]];
-            [_likeButton setTitleColor:[UIColor colorWithRed:152.0f/255.0f green:165.0f/255.0f blue:172.0f/255.0f alpha:1] forState:UIControlStateNormal];
         }
         [self setValuesToElements];
     }

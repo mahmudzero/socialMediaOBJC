@@ -9,7 +9,10 @@
 #import "AppDelegate.h"
 #import <AWSCore/AWSCore.h>
 
-@interface AppDelegate ()
+static NSString *const kLayerAppID = @"LAYER-APP-ID"; // TODO Update layer app id here
+
+@interface AppDelegate () //<LYRClientDelegate>
+//@property (nonatomic) LYRClient *layerClient;
 
 @end
 
@@ -17,13 +20,26 @@
     BOOL isLoggedIn;
 }
 
-
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
         // Override point for customization after application launch.
+        
+        _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         isLoggedIn = YES;
+        
         if(isLoggedIn) {
-            [self.window.rootViewController performSegueWithIdentifier:@"goToTabbedController" sender:self];
+            [_window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TabbedViewController"]];
+            //window?.rootViewController = UIStoryboard(name: "Story1", bundle: nil).instantiateInitialViewController()
         }
+        else
+        {
+            [_window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"InitialViewController"]];
+            //window?.rootViewController = UIStoryboard(name: "Story2", bundle: nil).instantiateInitialViewController()
+        }
+        
+        //window?.makeKeyAndVisible()
+        [_window makeKeyAndVisible];
+        
+
         AWSCognitoCredentialsProvider *credentialsProvider = [[AWSCognitoCredentialsProvider alloc] initWithRegionType:AWSRegionUSEast1
                                                                                                         identityPoolId:@"us-east-1:d77fb046-c1fd-4617-b0b2-52a625c8c0c1"];
         
@@ -31,6 +47,21 @@
                                                                              credentialsProvider:credentialsProvider];
         
         AWSServiceManager.defaultServiceManager.defaultServiceConfiguration = configuration;
+        
+        // Setup Layer
+        /*NSURL *appID = [NSURL URLWithString:@"APP ID"];
+        self.layerClient = [LYRClient clientWithAppID:appID];
+        if (self.layerClient.isConnected) {
+            // LayerKit is connected, no need to call connectWithCompletion:
+            // Tells LYRClient to establish a connection with the Layer service
+            [self.layerClient connectWithCompletion:^(BOOL success, NSError *error) {
+                if (success) {
+                    NSLog(@"Client is Connected!");
+                }
+            }];
+        }*/
+        
+        
         return YES;
     }
 

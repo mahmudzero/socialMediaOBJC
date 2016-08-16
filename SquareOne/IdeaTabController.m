@@ -8,22 +8,24 @@
 
 #import "IdeaTabController.h"
 #import "IdeaControllerCollectionViewCell.h"
+#import "AddNewIdeaElement.h"
 
 @interface IdeaTabController () <UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, IdeaControllerCollectionViewCellDelegate>
     @property (weak, nonatomic) IBOutlet UIView *menuBar;
     @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-
+    @property (weak, nonatomic) IBOutlet UIView *superView;
 @end
 
 @implementation IdeaTabController {
     id cellId;
-    NSArray *names;
-    NSArray *text;
+    NSMutableArray *names;
+    NSMutableArray *text;
     NSArray *comments;
     NSArray *commenters;
-    NSArray *imageURLs;
-    NSArray *numLikes;
-    NSArray *numComments;
+    NSMutableArray *imageURLs;
+    NSMutableArray *numLikes;
+    NSMutableArray *numComments;
+    AddNewIdeaElement *view;
 }
 
     - (void)loadView {
@@ -35,7 +37,7 @@
     - (void)viewDidLoad {
         [super viewDidLoad];
         // Do any additional setup after loading the view, typically from a nib.
-        [_collectionView reloadData];
+        [self setNeedsStatusBarAppearanceUpdate];
     }
 
     - (void)didReceiveMemoryWarning {
@@ -43,11 +45,66 @@
         // Dispose of any resources that can be recreated.
     }
 
+    - (void)addConstraintToNewIdeaController:(UIView *)viewForConstraint {
+        [view setTranslatesAutoresizingMaskIntoConstraints:NO];
+        NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:viewForConstraint attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:_superView attribute:NSLayoutAttributeWidth multiplier:1 constant:0];
+        NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:viewForConstraint attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:_superView attribute:NSLayoutAttributeHeight multiplier:1 constant:0];
+        NSLayoutConstraint *x = [NSLayoutConstraint constraintWithItem:viewForConstraint attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:_superView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0];
+        NSLayoutConstraint *y = [NSLayoutConstraint constraintWithItem:viewForConstraint attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:_superView attribute:NSLayoutAttributeCenterY multiplier:1 constant:0];
+        [self.view addConstraint:width];
+        [self.view addConstraint:height];
+        [self.view addConstraint:x];
+        [self.view addConstraint:y];
+                                                                                                                                                 
+    }
+
+    - (void)updateArraysAndAddNewIdea {
+        [names insertObject:view.nameLabel.text atIndex:0];
+        [text insertObject:view.textField.text atIndex:0];
+        [imageURLs insertObject:@"1" atIndex:0];
+        [numLikes insertObject:@0 atIndex:0];
+        [numComments insertObject:@0 atIndex:0];
+        [_collectionView reloadData];
+        [self removeViewFromSuperViewWithAnimation:view withTimeInterval:1.0];
+    }
+
+    - (void)removeViewFromSuperViewWithAnimation:(UIView *)viewToRemove withTimeInterval:(double)timeInterval {
+        NSTimeInterval *nsInterval = &timeInterval;
+        [UIView animateWithDuration:*nsInterval
+                         animations:^{viewToRemove.alpha = 0.0;}
+                         completion:^(BOOL finished){ [viewToRemove removeFromSuperview]; }];
+    }
+
+    - (void)removeViewFromSuperView {
+        [self removeViewFromSuperViewWithAnimation:view withTimeInterval:1.0];
+    }
+
+    - (UIStatusBarStyle)preferredStatusBarStyle {
+        return UIStatusBarStyleLightContent;
+    }
+
+    #pragma mark IBActions
+    - (IBAction)addNewIdea:(id)sender {
+        UINib *nib = [UINib nibWithNibName:@"AddNewIdea" bundle:nil];
+        view = [[nib instantiateWithOwner:self.view options:nil] lastObject];
+        [view.nameLabel setText:@"John Smith"];
+        [self.superView addSubview:view];
+        [[view button] addTarget:self action:@selector(updateArraysAndAddNewIdea) forControlEvents:UIControlEventTouchUpInside];
+        [[view closeButton] addTarget:self action:@selector(removeViewFromSuperView) forControlEvents:UIControlEventTouchUpInside];
+        [self addConstraintToNewIdeaController:view];
+        
+    }
+
+    #pragma mark IdeaControllerCollectionViewCellDelegate
+    - (void)goToCommentsWasPressed:(IdeaControllerCollectionViewCell *)cellDelegate {
+    
+    }
+
 
     #pragma mark UICollectionViewDelegate & DataSource Methods
 
     - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-        return 16;
+        return text.count;
     }
 
     - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -58,17 +115,19 @@
     }
 
     - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-        //NSInteger position = indexPath.row;
-        //CGRect *rect = [[text objectAtIndex:position] boundingRectWithSize:CGSizeMake(self.view.frame.size.width, 1000) options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: UIFontWeightThin}  context:nil];
-        return CGSizeMake(self.view.frame.size.width - 16, 155);
+        NSInteger position = indexPath.row;
+        UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:16];
+        CGRect rect = [[text objectAtIndex:position] boundingRectWithSize:CGSizeMake(self.view.frame.size.width - 46, 1000) options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: font}  context:nil];
+        NSLog(@"%f", rect.size.height);
+        return CGSizeMake(self.view.frame.size.width - 16, 135 + rect.size.height);
     }
 
 
     #pragma mark TestData
 
     -(void)initData {
-        names = [NSArray arrayWithObjects: @"John Smith", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", nil ];
-        text = [NSArray arrayWithObjects:
+        names = [NSMutableArray arrayWithObjects: @"John Smith", @"Emily Lane", @"Laura Wilson", @"Josh Walker", @"Jaime Sanchez", @"Aaron Wong", @"Evelyn Jackson", @"Christine Hunter", @"Jack Murphy", @"Thoman Bennet", @"Stephen Jones", @"David Cruz", @"Hannah Nguyen", @"John Smith", @"Josh Walker", @"Evelyn Jackson", nil ];
+        text = [NSMutableArray arrayWithObjects:
                             @"Laundry and dry cleaning service for students that picks up and delivers their clothes",
                             @"A YouTube Channel showing creative ways to use and apply makeup",
                             @"An app that allows college students to connect to create businesses",
@@ -139,9 +198,9 @@
                                    @""]
                                  ];
         
-        imageURLs = [NSArray arrayWithObjects: @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", nil ];
-        numLikes= @[ @31, @58, @272, @12, @18, @82, @22, @38, @42, @34, @10, @21, @34, @54, @11, @25 ];
-        numComments = @[ @7, @22, @81, @0, @3, @17, @3, @25, @7, @8, @4, @14, @12, @17, @2, @8 ];
+        imageURLs = [NSMutableArray arrayWithObjects: @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", nil ];
+        numLikes= [NSMutableArray arrayWithObjects: @31, @58, @272, @12, @18, @82, @22, @38, @42, @34, @10, @21, @34, @54, @11, @25, nil ];
+        numComments = [NSMutableArray arrayWithObjects: @7, @22, @81, @0, @3, @17, @3, @25, @7, @8, @4, @14, @12, @17, @2, @8, nil ];
         
     }
 

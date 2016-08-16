@@ -12,6 +12,8 @@
 
     @protocol IdeaControllerCollectionViewCellDelegate <NSObject>
 
+    - (void)goToCommentsWasPressed:(IdeaControllerCollectionViewCell *)cellDelegate;
+
 @end
 
 
