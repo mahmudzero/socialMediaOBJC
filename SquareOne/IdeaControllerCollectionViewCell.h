@@ -20,6 +20,6 @@
 @interface IdeaControllerCollectionViewCell : UICollectionViewCell
 
     @property (nonatomic,weak) id<IdeaControllerCollectionViewCellDelegate> cellDelegate;
-    - (void)setIdeaValues:(NSString *)userId withUserNamed:(NSString *)name withText:(NSString *)text withImageURL:(NSString *)image withNumLikes:(int)numLikes withNumComments:(int)numComments;
+    - (void)setIdeaValues:(NSString *)userId withUserNamed:(NSString *)name withUserTitle:(NSString *)title withText:(NSString *)text withImageURL:(NSString *)image withNumLikes:(int)numLikes withNumComments:(int)numComments;
 
 @end

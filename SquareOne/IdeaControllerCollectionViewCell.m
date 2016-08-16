@@ -24,8 +24,8 @@
         }
     }
 
-    - (void)setIdeaValues:(NSString *)userId withUserNamed:(NSString *)name withText:(NSString *)text withImageURL:(NSString *)imageNamed withNumLikes:(int)numLikes withNumComments:(int)numComments {
-        [_ideaElement assignValuesForElements:userId withUserNamed:name withText:text withImageURL:imageNamed withNumLikes:numLikes withNumComments:numComments];
+    - (void)setIdeaValues:(NSString *)userId withUserNamed:(NSString *)name withUserTitle:(NSString *)title withText:(NSString *)text withImageURL:(NSString *)image withNumLikes:(int)numLikes withNumComments:(int)numComments {
+        [_ideaElement assignValuesForElements:userId withUserNamed:name withText:text withImageURL:image withNumLikes:numLikes withNumComments:numComments withTitle:title];
     }
 
 @end

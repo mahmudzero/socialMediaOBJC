@@ -25,6 +25,7 @@
     NSString *userID;
     NSString *userName;
     NSString *postText;
+    NSString *userTitle;
     UIImage *userImage;
     int numOfLikes;
     int numOfComments;
@@ -36,10 +37,12 @@
             isLiked = YES;
             numOfLikes += 1;
             [_likesLabel setTextColor:[UIColor colorWithRed:0.0f/255.0f green:165.0f/255.0f blue:172.0f/255.0f alpha:1]];
+            [_likeButton setImage:[UIImage imageNamed:@"ColoredBulb.png"] forState:UIControlStateNormal];
         } else {
             isLiked = NO;
             numOfLikes -= 1;
             [_likesLabel setTextColor:[UIColor colorWithRed:152.0f/255.0f green:165.0f/255.0f blue:172.0f/255.0f alpha:1]];
+            [_likeButton setImage:[UIImage imageNamed:@"Bulb"] forState:UIControlStateNormal];
         }
         [self setValuesToElements];
     }
@@ -48,20 +51,20 @@
         NSLog(@"message");
     }
 
-    - (void)assignValuesForElements:(NSString *)userId withUserNamed:(NSString *)name withText:(NSString *)text withImageURL:(NSString *)imageName withNumLikes:(int)numLikes withNumComments:(int)numComments {
+    - (void)assignValuesForElements:(NSString *)userId withUserNamed:(NSString *)name withText:(NSString *)text withImageURL:(NSString *)imageName withNumLikes:(int)numLikes withNumComments:(int)numComments withTitle:(NSString *)title {
         userID = userId;
         userName = name;
         postText = text;
         userImage = [UIImage imageNamed:imageName];
-        
+        userTitle = title;
         numOfLikes = numLikes;
         numOfComments = numComments;
         [self setValuesToElements];
     }
 
     - (void)setValuesToElements {
-        _nameLabel.text = userName;   //hidden because no title for test data
-        //_personTitleLable.text = @""; //_personTitleLable.hidden = YES;
+        _nameLabel.text = userName;
+        _personTitleLable.text = userTitle;
         _numberOfComments.text = [NSString stringWithFormat:@"%i", numOfComments];
         _likesLabel.text = [NSString stringWithFormat:@"%i", numOfLikes];
         _textView.text = postText;

@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "userID": "",
+            "name": "E-bykes",
+            "title": "Transportation",
+            "profilePic": "E-bykes.png",
+            "skillPic": "E-bykes Media.png",
+            "status": "Looking to add another electrical engineer to our team!",
+            "follow": false,
+        },
+        {
+            "userID": "",
+            "name": "The Bayou Kitchen",
+            "title": "Food & Beverage",
+            "profilePic": "Bayou Kitchen.png",
+            "skillPic": "Bayou Kitchen's Media.png",
+            "status": "Working on expanding our menu to include more diverse food items",
+            "follow": false,
+        },
+        {
+            "userID": "",
+            "name": "Honey B's",
+            "title": "Food & Beverage",
+            "profilePic": "Honey B's.png",
+            "skillPic": "Honey B's Media.png",
+            "status": "Recently released a new dessert line made exclusively with honey!",
+            "follow": false,
+        },
+        {
+            "userID": "",
+            "name": "Miracle Dresses",
+            "title": "Clothing",
+            "profilePic": "Wedding Media1.png",
+            "skillPic": "Wedding Media2.png",
+            "status": "Looking for a web developer to help us create a website to sell dresses",
+            "follow": false,
+        },
+        {
+            "userID": "",
+            "name": "Smart Jump",
+            "title": "Fitness",
+            "profilePic": "Smart Jump.png",
+            "skillPic": "Smart Jump Media.png",
+            "status": "Launched a new rope that measures and records your heart rate while jumping!",
+            "follow": false,
+        }
+    ]
+}

@@ -19,32 +19,28 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfY-6C-3C8">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SquareOne" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGA-t1-yXc">
-                                <rect key="frame" x="192.5" y="123" width="214.5" height="54"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rwQ-R9-NtH">
-                                <rect key="frame" x="175" y="175" width="250" height="250"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SQ1_Logo_Unedited.png" translatesAutoresizingMaskIntoConstraints="NO" id="rwQ-R9-NtH">
+                                        <rect key="frame" x="175" y="175" width="250" height="250"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="BFh-pA-g7k"/>
+                                            <constraint firstAttribute="width" constant="250" id="YFj-Dx-pwm"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="BFh-pA-g7k"/>
-                                    <constraint firstAttribute="width" constant="250" id="YFj-Dx-pwm"/>
+                                    <constraint firstItem="rwQ-R9-NtH" firstAttribute="centerX" secondItem="OfY-6C-3C8" secondAttribute="centerX" id="bZi-ar-Roh"/>
+                                    <constraint firstItem="rwQ-R9-NtH" firstAttribute="centerY" secondItem="OfY-6C-3C8" secondAttribute="centerY" id="zK0-8V-kHQ"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZGA-t1-yXc" firstAttribute="centerY" secondItem="OfY-6C-3C8" secondAttribute="centerY" constant="-150" id="4TG-eS-6WZ"/>
                             <constraint firstItem="OfY-6C-3C8" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="GZa-fp-7Kp"/>
-                            <constraint firstItem="rwQ-R9-NtH" firstAttribute="centerY" secondItem="OfY-6C-3C8" secondAttribute="centerY" id="HSE-hu-eUr"/>
                             <constraint firstItem="OfY-6C-3C8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dF7-ZM-9lQ"/>
-                            <constraint firstItem="rwQ-R9-NtH" firstAttribute="centerX" secondItem="OfY-6C-3C8" secondAttribute="centerX" id="n6F-A9-hdO"/>
                             <constraint firstItem="OfY-6C-3C8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tBf-uD-uaR"/>
-                            <constraint firstItem="ZGA-t1-yXc" firstAttribute="centerX" secondItem="OfY-6C-3C8" secondAttribute="centerX" id="tY7-bk-fsd"/>
                             <constraint firstItem="OfY-6C-3C8" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="uT7-gT-3Oj"/>
                         </constraints>
                     </view>
@@ -54,4 +50,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SQ1_Logo_Unedited.png" width="240" height="240"/>
+    </resources>
 </document>

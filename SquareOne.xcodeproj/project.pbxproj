@@ -28,6 +28,53 @@
 		F45736B31D555B4B0080A148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F407B8421D2C2EF400D80C1E /* main.m */; };
 		F465B9891D5FB07C008F1371 /* IdeaControllerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B9881D5FB07C008F1371 /* IdeaControllerCollectionViewCell.m */; };
 		F465B98D1D5FDCD0008F1371 /* IdeaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B98C1D5FDCD0008F1371 /* IdeaModel.m */; };
+		F47776991D6358480041BB03 /* exploreTab-data.json in Resources */ = {isa = PBXBuildFile; fileRef = F47776981D6358480041BB03 /* exploreTab-data.json */; };
+		F47776B21D6358760041BB03 /* Aaron Wong.png in Resources */ = {isa = PBXBuildFile; fileRef = F477769A1D6358760041BB03 /* Aaron Wong.png */; };
+		F47776B31D6358760041BB03 /* Aaron Wong's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F477769B1D6358760041BB03 /* Aaron Wong's Skill.png */; };
+		F47776B41D6358760041BB03 /* Ashley Taylor's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F477769C1D6358760041BB03 /* Ashley Taylor's Skill.png */; };
+		F47776B51D6358760041BB03 /* Christine Hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = F477769D1D6358760041BB03 /* Christine Hunter.png */; };
+		F47776B61D6358760041BB03 /* Christine Hunter's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F477769E1D6358760041BB03 /* Christine Hunter's Skill.png */; };
+		F47776B71D6358760041BB03 /* David Cruz.png in Resources */ = {isa = PBXBuildFile; fileRef = F477769F1D6358760041BB03 /* David Cruz.png */; };
+		F47776B81D6358760041BB03 /* David Cruz's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776A01D6358760041BB03 /* David Cruz's Skill.png */; };
+		F47776B91D6358760041BB03 /* Emily Lane.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776A11D6358760041BB03 /* Emily Lane.png */; };
+		F47776BA1D6358760041BB03 /* Evelyn Jackson.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776A21D6358760041BB03 /* Evelyn Jackson.png */; };
+		F47776BB1D6358760041BB03 /* Evelyn Jackson's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776A31D6358760041BB03 /* Evelyn Jackson's Skill.png */; };
+		F47776BC1D6358760041BB03 /* Hannah Nguyen.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776A41D6358760041BB03 /* Hannah Nguyen.png */; };
+		F47776BD1D6358760041BB03 /* Hannah Nguyen's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776A51D6358760041BB03 /* Hannah Nguyen's Skill.png */; };
+		F47776BE1D6358760041BB03 /* Jack Murphy.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776A61D6358760041BB03 /* Jack Murphy.png */; };
+		F47776BF1D6358760041BB03 /* Jack Murphy's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776A71D6358760041BB03 /* Jack Murphy's Skill.png */; };
+		F47776C01D6358760041BB03 /* Jamie Sanchez.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776A81D6358760041BB03 /* Jamie Sanchez.png */; };
+		F47776C11D6358760041BB03 /* Jamie Sanchez's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776A91D6358760041BB03 /* Jamie Sanchez's Skill.png */; };
+		F47776C21D6358760041BB03 /* Josh Walker.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776AA1D6358760041BB03 /* Josh Walker.png */; };
+		F47776C31D6358760041BB03 /* Josh Walker's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776AB1D6358760041BB03 /* Josh Walker's Skill.png */; };
+		F47776C41D6358760041BB03 /* Laura Wilson.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776AC1D6358760041BB03 /* Laura Wilson.png */; };
+		F47776C51D6358760041BB03 /* Laura Wilson's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776AD1D6358760041BB03 /* Laura Wilson's Skill.png */; };
+		F47776C61D6358760041BB03 /* Stephen Jones.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776AE1D6358760041BB03 /* Stephen Jones.png */; };
+		F47776C71D6358760041BB03 /* Stephen Jones's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776AF1D6358760041BB03 /* Stephen Jones's Skill.png */; };
+		F47776C81D6358760041BB03 /* Thomas Bennet.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776B01D6358760041BB03 /* Thomas Bennet.png */; };
+		F47776C91D6358760041BB03 /* Thomas Bennet's Skill.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776B11D6358760041BB03 /* Thomas Bennet's Skill.png */; };
+		F47776DD1D6358F20041BB03 /* Bayou Kitchen.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776CE1D6358F20041BB03 /* Bayou Kitchen.png */; };
+		F47776DE1D6358F20041BB03 /* Bayou Kitchen's Media.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776CF1D6358F20041BB03 /* Bayou Kitchen's Media.png */; };
+		F47776DF1D6358F20041BB03 /* E-bykes Media.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776D01D6358F20041BB03 /* E-bykes Media.png */; };
+		F47776E01D6358F20041BB03 /* E-bykes.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776D11D6358F20041BB03 /* E-bykes.png */; };
+		F47776E11D6358F20041BB03 /* Honey B's Media.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776D21D6358F20041BB03 /* Honey B's Media.png */; };
+		F47776E21D6358F20041BB03 /* Honey B's.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776D31D6358F20041BB03 /* Honey B's.png */; };
+		F47776E31D6358F20041BB03 /* Shadi Adada.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776D41D6358F20041BB03 /* Shadi Adada.png */; };
+		F47776E41D6358F20041BB03 /* Shadi Adada's Media (small).png in Resources */ = {isa = PBXBuildFile; fileRef = F47776D51D6358F20041BB03 /* Shadi Adada's Media (small).png */; };
+		F47776E51D6358F20041BB03 /* Shadi Adada's Media.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776D61D6358F20041BB03 /* Shadi Adada's Media.png */; };
+		F47776E61D6358F20041BB03 /* Smart Jump Media.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776D71D6358F20041BB03 /* Smart Jump Media.png */; };
+		F47776E71D6358F20041BB03 /* Smart Jump.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776D81D6358F20041BB03 /* Smart Jump.png */; };
+		F47776E81D6358F20041BB03 /* SQ1_Logo_Unedited.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776D91D6358F20041BB03 /* SQ1_Logo_Unedited.png */; };
+		F47776E91D6358F20041BB03 /* SQ1_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776DA1D6358F20041BB03 /* SQ1_Logo.png */; };
+		F47776EA1D6358F20041BB03 /* Wedding Media1.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776DB1D6358F20041BB03 /* Wedding Media1.png */; };
+		F47776EB1D6358F20041BB03 /* Wedding Media2.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776DC1D6358F20041BB03 /* Wedding Media2.png */; };
+		F47776F21D6359B20041BB03 /* ColoredBulb.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776EC1D6359B20041BB03 /* ColoredBulb.png */; };
+		F47776F31D6359B20041BB03 /* ColoredCompass.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776ED1D6359B20041BB03 /* ColoredCompass.png */; };
+		F47776F41D6359B20041BB03 /* Coloredfollow.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776EE1D6359B20041BB03 /* Coloredfollow.png */; };
+		F47776F51D6359B20041BB03 /* ColoredIdea.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776EF1D6359B20041BB03 /* ColoredIdea.png */; };
+		F47776F61D6359B20041BB03 /* ColoredMessaging.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776F01D6359B20041BB03 /* ColoredMessaging.png */; };
+		F47776F71D6359B20041BB03 /* ColoredNotification.png in Resources */ = {isa = PBXBuildFile; fileRef = F47776F11D6359B20041BB03 /* ColoredNotification.png */; };
+		F47776F91D635CDD0041BB03 /* startups.json in Resources */ = {isa = PBXBuildFile; fileRef = F47776F81D635CDD0041BB03 /* startups.json */; };
 		F47AF7451D4A8A2D000B1EB6 /* AWSAPIGateway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47AF7321D4A8A2D000B1EB6 /* AWSAPIGateway.framework */; };
 		F47AF7461D4A8A2D000B1EB6 /* AWSAPIGateway.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47AF7321D4A8A2D000B1EB6 /* AWSAPIGateway.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F47AF7471D4A8A2D000B1EB6 /* AWSAutoScaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47AF7331D4A8A2D000B1EB6 /* AWSAutoScaling.framework */; };
@@ -72,7 +119,6 @@
 		F4C30C151D6114CA0031C360 /* StartupElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C30C141D6114CA0031C360 /* StartupElement.m */; };
 		F4C30C181D61150B0031C360 /* ExploreTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C30C171D61150B0031C360 /* ExploreTabController.m */; };
 		F4C30C1E1D6136BE0031C360 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C30C1D1D6136BE0031C360 /* InitialViewController.m */; };
-		F4D5FDA81D6224980086E91E /* exploreTab-data.json in Resources */ = {isa = PBXBuildFile; fileRef = F4D5FDA71D6224980086E91E /* exploreTab-data.json */; };
 		F4D5FDAC1D6225A70086E91E /* PersonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D5FDAB1D6225A70086E91E /* PersonCollectionViewCell.m */; };
 		F4D5FDAE1D622DE70086E91E /* AddNewIdea.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4D5FDAD1D622DE70086E91E /* AddNewIdea.xib */; };
 		F4D5FDB11D6235610086E91E /* AddNewIdeaElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D5FDB01D6235610086E91E /* AddNewIdeaElement.m */; };
@@ -88,6 +134,7 @@
 		F4ECA23B1D628EDE00944A19 /* navigation drawer.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA2301D628EDE00944A19 /* navigation drawer.png */; };
 		F4ECA23C1D628EDE00944A19 /* Notification.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA2311D628EDE00944A19 /* Notification.png */; };
 		F4ECA23D1D628EDE00944A19 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = F4ECA2321D628EDE00944A19 /* search.png */; };
+		F4ECA2401D62987A00944A19 /* CommentTestingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ECA23F1D62987A00944A19 /* CommentTestingElement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +215,53 @@
 		F465B9881D5FB07C008F1371 /* IdeaControllerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdeaControllerCollectionViewCell.m; sourceTree = "<group>"; };
 		F465B98B1D5FDCD0008F1371 /* IdeaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdeaModel.h; sourceTree = "<group>"; };
 		F465B98C1D5FDCD0008F1371 /* IdeaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdeaModel.m; sourceTree = "<group>"; };
+		F47776981D6358480041BB03 /* exploreTab-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "exploreTab-data.json"; path = "../JSON/exploreTab-data.json"; sourceTree = "<group>"; };
+		F477769A1D6358760041BB03 /* Aaron Wong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Aaron Wong.png"; path = "../Aaron Wong.png"; sourceTree = "<group>"; };
+		F477769B1D6358760041BB03 /* Aaron Wong's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Aaron Wong's Skill.png"; path = "../Aaron Wong's Skill.png"; sourceTree = "<group>"; };
+		F477769C1D6358760041BB03 /* Ashley Taylor's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ashley Taylor's Skill.png"; path = "../Ashley Taylor's Skill.png"; sourceTree = "<group>"; };
+		F477769D1D6358760041BB03 /* Christine Hunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Christine Hunter.png"; path = "../Christine Hunter.png"; sourceTree = "<group>"; };
+		F477769E1D6358760041BB03 /* Christine Hunter's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Christine Hunter's Skill.png"; path = "../Christine Hunter's Skill.png"; sourceTree = "<group>"; };
+		F477769F1D6358760041BB03 /* David Cruz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "David Cruz.png"; path = "../David Cruz.png"; sourceTree = "<group>"; };
+		F47776A01D6358760041BB03 /* David Cruz's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "David Cruz's Skill.png"; path = "../David Cruz's Skill.png"; sourceTree = "<group>"; };
+		F47776A11D6358760041BB03 /* Emily Lane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Emily Lane.png"; path = "../Emily Lane.png"; sourceTree = "<group>"; };
+		F47776A21D6358760041BB03 /* Evelyn Jackson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Evelyn Jackson.png"; path = "../Evelyn Jackson.png"; sourceTree = "<group>"; };
+		F47776A31D6358760041BB03 /* Evelyn Jackson's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Evelyn Jackson's Skill.png"; path = "../Evelyn Jackson's Skill.png"; sourceTree = "<group>"; };
+		F47776A41D6358760041BB03 /* Hannah Nguyen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hannah Nguyen.png"; path = "../Hannah Nguyen.png"; sourceTree = "<group>"; };
+		F47776A51D6358760041BB03 /* Hannah Nguyen's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hannah Nguyen's Skill.png"; path = "../Hannah Nguyen's Skill.png"; sourceTree = "<group>"; };
+		F47776A61D6358760041BB03 /* Jack Murphy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Jack Murphy.png"; path = "../Jack Murphy.png"; sourceTree = "<group>"; };
+		F47776A71D6358760041BB03 /* Jack Murphy's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Jack Murphy's Skill.png"; path = "../Jack Murphy's Skill.png"; sourceTree = "<group>"; };
+		F47776A81D6358760041BB03 /* Jamie Sanchez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Jamie Sanchez.png"; path = "../Jamie Sanchez.png"; sourceTree = "<group>"; };
+		F47776A91D6358760041BB03 /* Jamie Sanchez's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Jamie Sanchez's Skill.png"; path = "../Jamie Sanchez's Skill.png"; sourceTree = "<group>"; };
+		F47776AA1D6358760041BB03 /* Josh Walker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Josh Walker.png"; path = "../Josh Walker.png"; sourceTree = "<group>"; };
+		F47776AB1D6358760041BB03 /* Josh Walker's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Josh Walker's Skill.png"; path = "../Josh Walker's Skill.png"; sourceTree = "<group>"; };
+		F47776AC1D6358760041BB03 /* Laura Wilson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Laura Wilson.png"; path = "../Laura Wilson.png"; sourceTree = "<group>"; };
+		F47776AD1D6358760041BB03 /* Laura Wilson's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Laura Wilson's Skill.png"; path = "../Laura Wilson's Skill.png"; sourceTree = "<group>"; };
+		F47776AE1D6358760041BB03 /* Stephen Jones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Stephen Jones.png"; path = "../Stephen Jones.png"; sourceTree = "<group>"; };
+		F47776AF1D6358760041BB03 /* Stephen Jones's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Stephen Jones's Skill.png"; path = "../Stephen Jones's Skill.png"; sourceTree = "<group>"; };
+		F47776B01D6358760041BB03 /* Thomas Bennet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Thomas Bennet.png"; path = "../Thomas Bennet.png"; sourceTree = "<group>"; };
+		F47776B11D6358760041BB03 /* Thomas Bennet's Skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Thomas Bennet's Skill.png"; path = "../Thomas Bennet's Skill.png"; sourceTree = "<group>"; };
+		F47776CE1D6358F20041BB03 /* Bayou Kitchen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bayou Kitchen.png"; sourceTree = "<group>"; };
+		F47776CF1D6358F20041BB03 /* Bayou Kitchen's Media.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bayou Kitchen's Media.png"; sourceTree = "<group>"; };
+		F47776D01D6358F20041BB03 /* E-bykes Media.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "E-bykes Media.png"; sourceTree = "<group>"; };
+		F47776D11D6358F20041BB03 /* E-bykes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "E-bykes.png"; sourceTree = "<group>"; };
+		F47776D21D6358F20041BB03 /* Honey B's Media.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Honey B's Media.png"; sourceTree = "<group>"; };
+		F47776D31D6358F20041BB03 /* Honey B's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Honey B's.png"; sourceTree = "<group>"; };
+		F47776D41D6358F20041BB03 /* Shadi Adada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shadi Adada.png"; sourceTree = "<group>"; };
+		F47776D51D6358F20041BB03 /* Shadi Adada's Media (small).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shadi Adada's Media (small).png"; sourceTree = "<group>"; };
+		F47776D61D6358F20041BB03 /* Shadi Adada's Media.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shadi Adada's Media.png"; sourceTree = "<group>"; };
+		F47776D71D6358F20041BB03 /* Smart Jump Media.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Smart Jump Media.png"; sourceTree = "<group>"; };
+		F47776D81D6358F20041BB03 /* Smart Jump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Smart Jump.png"; sourceTree = "<group>"; };
+		F47776D91D6358F20041BB03 /* SQ1_Logo_Unedited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SQ1_Logo_Unedited.png; sourceTree = "<group>"; };
+		F47776DA1D6358F20041BB03 /* SQ1_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SQ1_Logo.png; sourceTree = "<group>"; };
+		F47776DB1D6358F20041BB03 /* Wedding Media1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wedding Media1.png"; sourceTree = "<group>"; };
+		F47776DC1D6358F20041BB03 /* Wedding Media2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wedding Media2.png"; sourceTree = "<group>"; };
+		F47776EC1D6359B20041BB03 /* ColoredBulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColoredBulb.png; sourceTree = "<group>"; };
+		F47776ED1D6359B20041BB03 /* ColoredCompass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColoredCompass.png; sourceTree = "<group>"; };
+		F47776EE1D6359B20041BB03 /* Coloredfollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coloredfollow.png; sourceTree = "<group>"; };
+		F47776EF1D6359B20041BB03 /* ColoredIdea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColoredIdea.png; sourceTree = "<group>"; };
+		F47776F01D6359B20041BB03 /* ColoredMessaging.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColoredMessaging.png; sourceTree = "<group>"; };
+		F47776F11D6359B20041BB03 /* ColoredNotification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColoredNotification.png; sourceTree = "<group>"; };
+		F47776F81D635CDD0041BB03 /* startups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = startups.json; sourceTree = "<group>"; };
 		F47AF7321D4A8A2D000B1EB6 /* AWSAPIGateway.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAPIGateway.framework; sourceTree = "<group>"; };
 		F47AF7331D4A8A2D000B1EB6 /* AWSAutoScaling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAutoScaling.framework; sourceTree = "<group>"; };
 		F47AF7341D4A8A2D000B1EB6 /* AWSCloudWatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCloudWatch.framework; sourceTree = "<group>"; };
@@ -209,7 +303,6 @@
 		F4C30C171D61150B0031C360 /* ExploreTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTabController.m; sourceTree = "<group>"; };
 		F4C30C1C1D6136BE0031C360 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
 		F4C30C1D1D6136BE0031C360 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
-		F4D5FDA71D6224980086E91E /* exploreTab-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "exploreTab-data.json"; sourceTree = "<group>"; };
 		F4D5FDAA1D6225A70086E91E /* PersonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCollectionViewCell.h; sourceTree = "<group>"; };
 		F4D5FDAB1D6225A70086E91E /* PersonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCollectionViewCell.m; sourceTree = "<group>"; };
 		F4D5FDAD1D622DE70086E91E /* AddNewIdea.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewIdea.xib; sourceTree = "<group>"; };
@@ -229,6 +322,8 @@
 		F4ECA2301D628EDE00944A19 /* navigation drawer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation drawer.png"; sourceTree = "<group>"; };
 		F4ECA2311D628EDE00944A19 /* Notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Notification.png; sourceTree = "<group>"; };
 		F4ECA2321D628EDE00944A19 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		F4ECA23E1D62987A00944A19 /* CommentTestingElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTestingElement.h; sourceTree = "<group>"; };
+		F4ECA23F1D62987A00944A19 /* CommentTestingElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTestingElement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,6 +478,8 @@
 			children = (
 				F4D5FDAF1D6235610086E91E /* AddNewIdeaElement.h */,
 				F4D5FDB01D6235610086E91E /* AddNewIdeaElement.m */,
+				F4ECA23E1D62987A00944A19 /* CommentTestingElement.h */,
+				F4ECA23F1D62987A00944A19 /* CommentTestingElement.m */,
 				F437622D1D34140B00729D54 /* elementParent.h */,
 				F437622B1D3413FD00729D54 /* elementParent.m */,
 				F47EFBD41D4A596B00089AE6 /* IdeaElement.h */,
@@ -413,6 +510,83 @@
 				F465B98C1D5FDCD0008F1371 /* IdeaModel.m */,
 			);
 			name = DataModels;
+			sourceTree = "<group>";
+		};
+		F47776CB1D6358A60041BB03 /* People and Skills */ = {
+			isa = PBXGroup;
+			children = (
+				F477769A1D6358760041BB03 /* Aaron Wong.png */,
+				F477769B1D6358760041BB03 /* Aaron Wong's Skill.png */,
+				F477769C1D6358760041BB03 /* Ashley Taylor's Skill.png */,
+				F477769D1D6358760041BB03 /* Christine Hunter.png */,
+				F477769E1D6358760041BB03 /* Christine Hunter's Skill.png */,
+				F477769F1D6358760041BB03 /* David Cruz.png */,
+				F47776A01D6358760041BB03 /* David Cruz's Skill.png */,
+				F47776A11D6358760041BB03 /* Emily Lane.png */,
+				F47776A21D6358760041BB03 /* Evelyn Jackson.png */,
+				F47776A31D6358760041BB03 /* Evelyn Jackson's Skill.png */,
+				F47776A41D6358760041BB03 /* Hannah Nguyen.png */,
+				F47776A51D6358760041BB03 /* Hannah Nguyen's Skill.png */,
+				F47776A61D6358760041BB03 /* Jack Murphy.png */,
+				F47776A71D6358760041BB03 /* Jack Murphy's Skill.png */,
+				F47776A81D6358760041BB03 /* Jamie Sanchez.png */,
+				F47776A91D6358760041BB03 /* Jamie Sanchez's Skill.png */,
+				F47776AA1D6358760041BB03 /* Josh Walker.png */,
+				F47776AB1D6358760041BB03 /* Josh Walker's Skill.png */,
+				F47776AC1D6358760041BB03 /* Laura Wilson.png */,
+				F47776AD1D6358760041BB03 /* Laura Wilson's Skill.png */,
+				F47776AE1D6358760041BB03 /* Stephen Jones.png */,
+				F47776AF1D6358760041BB03 /* Stephen Jones's Skill.png */,
+				F47776B01D6358760041BB03 /* Thomas Bennet.png */,
+				F47776B11D6358760041BB03 /* Thomas Bennet's Skill.png */,
+			);
+			name = "People and Skills";
+			sourceTree = "<group>";
+		};
+		F47776CC1D6358B40041BB03 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F47776EC1D6359B20041BB03 /* ColoredBulb.png */,
+				F47776ED1D6359B20041BB03 /* ColoredCompass.png */,
+				F47776EE1D6359B20041BB03 /* Coloredfollow.png */,
+				F47776EF1D6359B20041BB03 /* ColoredIdea.png */,
+				F47776F01D6359B20041BB03 /* ColoredMessaging.png */,
+				F47776F11D6359B20041BB03 /* ColoredNotification.png */,
+				F47776D91D6358F20041BB03 /* SQ1_Logo_Unedited.png */,
+				F47776DA1D6358F20041BB03 /* SQ1_Logo.png */,
+				F4ECA2281D628EDE00944A19 /* Bulb.png */,
+				F4ECA2291D628EDE00944A19 /* comment.png */,
+				F4ECA22A1D628EDE00944A19 /* Compass.png */,
+				F4ECA22B1D628EDE00944A19 /* Detail Disclosure.png */,
+				F4ECA22C1D628EDE00944A19 /* Edit Button.png */,
+				F4ECA22D1D628EDE00944A19 /* follow.png */,
+				F4ECA22E1D628EDE00944A19 /* Idea.png */,
+				F4ECA22F1D628EDE00944A19 /* Messaging.png */,
+				F4ECA2301D628EDE00944A19 /* navigation drawer.png */,
+				F4ECA2311D628EDE00944A19 /* Notification.png */,
+				F4ECA2321D628EDE00944A19 /* search.png */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F47776CD1D6358DA0041BB03 /* Startups */ = {
+			isa = PBXGroup;
+			children = (
+				F47776CE1D6358F20041BB03 /* Bayou Kitchen.png */,
+				F47776CF1D6358F20041BB03 /* Bayou Kitchen's Media.png */,
+				F47776D01D6358F20041BB03 /* E-bykes Media.png */,
+				F47776D11D6358F20041BB03 /* E-bykes.png */,
+				F47776D21D6358F20041BB03 /* Honey B's Media.png */,
+				F47776D31D6358F20041BB03 /* Honey B's.png */,
+				F47776D41D6358F20041BB03 /* Shadi Adada.png */,
+				F47776D51D6358F20041BB03 /* Shadi Adada's Media (small).png */,
+				F47776D61D6358F20041BB03 /* Shadi Adada's Media.png */,
+				F47776D71D6358F20041BB03 /* Smart Jump Media.png */,
+				F47776D81D6358F20041BB03 /* Smart Jump.png */,
+				F47776DB1D6358F20041BB03 /* Wedding Media1.png */,
+				F47776DC1D6358F20041BB03 /* Wedding Media2.png */,
+			);
+			name = Startups;
 			sourceTree = "<group>";
 		};
 		F47AF76C1D4A8A3A000B1EB6 /* Framkeworks */ = {
@@ -499,7 +673,8 @@
 		F4D5FDA91D6224AB0086E91E /* json */ = {
 			isa = PBXGroup;
 			children = (
-				F4D5FDA71D6224980086E91E /* exploreTab-data.json */,
+				F47776F81D635CDD0041BB03 /* startups.json */,
+				F47776981D6358480041BB03 /* exploreTab-data.json */,
 			);
 			name = json;
 			sourceTree = "<group>";
@@ -507,17 +682,9 @@
 		F4ECA2271D62877C00944A19 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F4ECA2281D628EDE00944A19 /* Bulb.png */,
-				F4ECA2291D628EDE00944A19 /* comment.png */,
-				F4ECA22A1D628EDE00944A19 /* Compass.png */,
-				F4ECA22B1D628EDE00944A19 /* Detail Disclosure.png */,
-				F4ECA22C1D628EDE00944A19 /* Edit Button.png */,
-				F4ECA22D1D628EDE00944A19 /* follow.png */,
-				F4ECA22E1D628EDE00944A19 /* Idea.png */,
-				F4ECA22F1D628EDE00944A19 /* Messaging.png */,
-				F4ECA2301D628EDE00944A19 /* navigation drawer.png */,
-				F4ECA2311D628EDE00944A19 /* Notification.png */,
-				F4ECA2321D628EDE00944A19 /* search.png */,
+				F47776CD1D6358DA0041BB03 /* Startups */,
+				F47776CB1D6358A60041BB03 /* People and Skills */,
+				F47776CC1D6358B40041BB03 /* UI */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -632,24 +799,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4ECA23A1D628EDE00944A19 /* Messaging.png in Resources */,
+				F47776BD1D6358760041BB03 /* Hannah Nguyen's Skill.png in Resources */,
+				F47776E91D6358F20041BB03 /* SQ1_Logo.png in Resources */,
+				F47776B21D6358760041BB03 /* Aaron Wong.png in Resources */,
 				F4ECA2381D628EDE00944A19 /* follow.png in Resources */,
 				F47EFBE51D4A7CD700089AE6 /* StartupElement.xib in Resources */,
+				F47776BF1D6358760041BB03 /* Jack Murphy's Skill.png in Resources */,
+				F47776E51D6358F20041BB03 /* Shadi Adada's Media.png in Resources */,
+				F47776E31D6358F20041BB03 /* Shadi Adada.png in Resources */,
+				F47776C11D6358760041BB03 /* Jamie Sanchez's Skill.png in Resources */,
+				F47776B71D6358760041BB03 /* David Cruz.png in Resources */,
+				F47776B31D6358760041BB03 /* Aaron Wong's Skill.png in Resources */,
+				F47776C71D6358760041BB03 /* Stephen Jones's Skill.png in Resources */,
 				F4ECA2341D628EDE00944A19 /* comment.png in Resources */,
+				F47776DE1D6358F20041BB03 /* Bayou Kitchen's Media.png in Resources */,
 				F4ECA2361D628EDE00944A19 /* Detail Disclosure.png in Resources */,
-				F4D5FDA81D6224980086E91E /* exploreTab-data.json in Resources */,
+				F47776C81D6358760041BB03 /* Thomas Bennet.png in Resources */,
+				F47776EB1D6358F20041BB03 /* Wedding Media2.png in Resources */,
+				F47776C01D6358760041BB03 /* Jamie Sanchez.png in Resources */,
+				F47776BC1D6358760041BB03 /* Hannah Nguyen.png in Resources */,
+				F47776F91D635CDD0041BB03 /* startups.json in Resources */,
+				F47776E61D6358F20041BB03 /* Smart Jump Media.png in Resources */,
 				F47EFBD81D4A5B9B00089AE6 /* PersonElement.xib in Resources */,
+				F47776DD1D6358F20041BB03 /* Bayou Kitchen.png in Resources */,
+				F47776F71D6359B20041BB03 /* ColoredNotification.png in Resources */,
 				F407B8511D2C2EF400D80C1E /* LaunchScreen.storyboard in Resources */,
+				F47776B61D6358760041BB03 /* Christine Hunter's Skill.png in Resources */,
+				F47776DF1D6358F20041BB03 /* E-bykes Media.png in Resources */,
+				F47776F61D6359B20041BB03 /* ColoredMessaging.png in Resources */,
+				F47776BA1D6358760041BB03 /* Evelyn Jackson.png in Resources */,
 				F437622A1D303D5200729D54 /* NotificationElement.xib in Resources */,
 				F407B84E1D2C2EF400D80C1E /* Assets.xcassets in Resources */,
 				F4ECA23D1D628EDE00944A19 /* search.png in Resources */,
 				F4ECA23C1D628EDE00944A19 /* Notification.png in Resources */,
+				F47776E01D6358F20041BB03 /* E-bykes.png in Resources */,
+				F47776991D6358480041BB03 /* exploreTab-data.json in Resources */,
+				F47776B41D6358760041BB03 /* Ashley Taylor's Skill.png in Resources */,
+				F47776E41D6358F20041BB03 /* Shadi Adada's Media (small).png in Resources */,
 				F4ECA2101D627AE900944A19 /* comments-testing.xib in Resources */,
 				F4ECA2371D628EDE00944A19 /* Edit Button.png in Resources */,
+				F47776BE1D6358760041BB03 /* Jack Murphy.png in Resources */,
+				F47776E71D6358F20041BB03 /* Smart Jump.png in Resources */,
+				F47776C21D6358760041BB03 /* Josh Walker.png in Resources */,
 				F4ECA2331D628EDE00944A19 /* Bulb.png in Resources */,
+				F47776F31D6359B20041BB03 /* ColoredCompass.png in Resources */,
 				F4D5FDAE1D622DE70086E91E /* AddNewIdea.xib in Resources */,
+				F47776C51D6358760041BB03 /* Laura Wilson's Skill.png in Resources */,
+				F47776C61D6358760041BB03 /* Stephen Jones.png in Resources */,
+				F47776B51D6358760041BB03 /* Christine Hunter.png in Resources */,
+				F47776F41D6359B20041BB03 /* Coloredfollow.png in Resources */,
+				F47776B81D6358760041BB03 /* David Cruz's Skill.png in Resources */,
 				F407B84C1D2C2EF400D80C1E /* Main.storyboard in Resources */,
 				F4ECA2391D628EDE00944A19 /* Idea.png in Resources */,
+				F47776C91D6358760041BB03 /* Thomas Bennet's Skill.png in Resources */,
 				F4ECA2351D628EDE00944A19 /* Compass.png in Resources */,
+				F47776E11D6358F20041BB03 /* Honey B's Media.png in Resources */,
+				F47776C31D6358760041BB03 /* Josh Walker's Skill.png in Resources */,
+				F47776E81D6358F20041BB03 /* SQ1_Logo_Unedited.png in Resources */,
+				F47776E21D6358F20041BB03 /* Honey B's.png in Resources */,
+				F47776BB1D6358760041BB03 /* Evelyn Jackson's Skill.png in Resources */,
+				F47776C41D6358760041BB03 /* Laura Wilson.png in Resources */,
+				F47776EA1D6358F20041BB03 /* Wedding Media1.png in Resources */,
+				F47776B91D6358760041BB03 /* Emily Lane.png in Resources */,
+				F47776F21D6359B20041BB03 /* ColoredBulb.png in Resources */,
+				F47776F51D6359B20041BB03 /* ColoredIdea.png in Resources */,
 				F4ECA23B1D628EDE00944A19 /* navigation drawer.png in Resources */,
 				F40EA10F1D46A89200FE248F /* IdeaElement.xib in Resources */,
 			);
@@ -751,6 +964,7 @@
 				F45736AC1D555B020080A148 /* elementParent.m in Sources */,
 				F465B98D1D5FDCD0008F1371 /* IdeaModel.m in Sources */,
 				F45736AB1D555AFC0080A148 /* MenuController.m in Sources */,
+				F4ECA2401D62987A00944A19 /* CommentTestingElement.m in Sources */,
 				F4C30C181D61150B0031C360 /* ExploreTabController.m in Sources */,
 				F45736AA1D555AF70080A148 /* IdeaTabController.m in Sources */,
 				F45736A91D555AF20080A148 /* testController.m in Sources */,
@@ -897,7 +1111,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7A8A6A57C758C90D0532674 /* Pods-SquareOne.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -920,7 +1134,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 913D502D2563A8B729EAA3BB /* Pods-SquareOne.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

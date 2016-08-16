@@ -20,6 +20,7 @@
     id cellId;
     NSMutableArray *names;
     NSMutableArray *text;
+    NSMutableArray *title;
     NSArray *comments;
     NSArray *commenters;
     NSMutableArray *imageURLs;
@@ -88,7 +89,7 @@
         UINib *nib = [UINib nibWithNibName:@"AddNewIdea" bundle:nil];
         view = [[nib instantiateWithOwner:self.view options:nil] lastObject];
         [view.nameLabel setText:@"John Smith"];
-        [self.superView addSubview:view];
+        [self.view addSubview:view];
         [[view button] addTarget:self action:@selector(updateArraysAndAddNewIdea) forControlEvents:UIControlEventTouchUpInside];
         [[view closeButton] addTarget:self action:@selector(removeViewFromSuperView) forControlEvents:UIControlEventTouchUpInside];
         [self addConstraintToNewIdeaController:view];
@@ -97,7 +98,7 @@
 
     #pragma mark IdeaControllerCollectionViewCellDelegate
     - (void)goToCommentsWasPressed:(IdeaControllerCollectionViewCell *)cellDelegate {
-    
+        [self performSegueWithIdentifier:@"goToComments" sender:self];
     }
 
 
@@ -110,7 +111,7 @@
     - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
         IdeaControllerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
         NSInteger position = indexPath.row;
-        [cell setIdeaValues:@"1" withUserNamed:[names objectAtIndex:position] withText:[text objectAtIndex:position] withImageURL:@"1" withNumLikes:[[numLikes objectAtIndex:position] intValue] withNumComments:[[numComments objectAtIndex:position] intValue]];
+        [cell setIdeaValues:@"1" withUserNamed:[names objectAtIndex:position] withUserTitle:[title objectAtIndex:position] withText:[text objectAtIndex:position] withImageURL:[imageURLs objectAtIndex:position] withNumLikes:[[numLikes objectAtIndex:position] intValue] withNumComments:[[numComments objectAtIndex:position] intValue]];
         return cell;
     }
 
@@ -119,14 +120,14 @@
         UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:16];
         CGRect rect = [[text objectAtIndex:position] boundingRectWithSize:CGSizeMake(self.view.frame.size.width - 46, 1000) options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: font}  context:nil];
         NSLog(@"%f", rect.size.height);
-        return CGSizeMake(self.view.frame.size.width - 16, 135 + rect.size.height);
+        return CGSizeMake(self.view.frame.size.width - 16, 60 + rect.size.height);
     }
 
 
     #pragma mark TestData
 
     -(void)initData {
-        names = [NSMutableArray arrayWithObjects: @"John Smith", @"Emily Lane", @"Laura Wilson", @"Josh Walker", @"Jaime Sanchez", @"Aaron Wong", @"Evelyn Jackson", @"Christine Hunter", @"Jack Murphy", @"Thoman Bennet", @"Stephen Jones", @"David Cruz", @"Hannah Nguyen", @"John Smith", @"Josh Walker", @"Evelyn Jackson", nil ];
+        names = [NSMutableArray arrayWithObjects: @"Josh Walker", @"Emily Lane", @"Laura Wilson", @"Josh Walker", @"Jaime Sanchez", @"Aaron Wong", @"Evelyn Jackson", @"Christine Hunter", @"Jack Murphy", @"Thoman Bennet", @"Stephen Jones", @"David Cruz", @"Hannah Nguyen", @"Josh Walker", @"Evelyn Jackson", @"Emily Lane", nil ];
         text = [NSMutableArray arrayWithObjects:
                             @"Laundry and dry cleaning service for students that picks up and delivers their clothes",
                             @"A YouTube Channel showing creative ways to use and apply makeup",
@@ -146,59 +147,9 @@
                             @"Wedding dress line for low income women",
                             nil
                           ];
-        comments = @[
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               @[],
-                               
-                               @[@"Great idea! I know some people that can benefit from something like this",
-                                 @"Great idea! I know some people that can benefit from something like this",
-                                 @"Great idea! I know some people that can benefit from something like this",
-                                 @"Great idea! I know some people that can benefit from something like this",
-                                 @"Great idea! I know some people that can benefit from something like this",
-                                 @"Great idea! I know some people that can benefit from something like this",
-                                 @"Great idea! I know some people that can benefit from something like this",
-                                 @"Great idea! I know some people that can benefit from something like this"]
-                               ];
-        commenters = @[
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[],
-                                 @[@"",
-                                   @"",
-                                   @"",
-                                   @"",
-                                   @"",
-                                   @"",
-                                   @"",
-                                   @""]
-                                 ];
+        title = [NSMutableArray arrayWithObjects:@"Athlete", @"Chef", @"Graphic Designer", @"Athlete", @"Stylist", @"Artist", @"Musician", @"Creative Writer", @"Photographer", @"Professional Gamer", @"Mechanic", @"Barber", @"Developer", @"Athlete", @"Musician", @"Chef", nil];
         
-        imageURLs = [NSMutableArray arrayWithObjects: @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", nil ];
+        imageURLs = [NSMutableArray arrayWithObjects: @"Josh Walker.png", @"Emily Lane.png", @"Laura Wilson.png", @"Josh Walker.png", @"Jamie Sanchez.png", @"Aaron Wong.png", @"Evelyn Jackson.png", @"Christine Hunter.png", @"Jack Murphy.png", @"Thomas Bennet.png", @"Stephen Jones.png", @"David Cruz.png", @"Hannah Nguyen.png", @"Josh Walker.png", @"Evelyn Jackson.png", @"Emily Lane.png", nil ];
         numLikes= [NSMutableArray arrayWithObjects: @31, @58, @272, @12, @18, @82, @22, @38, @42, @34, @10, @21, @34, @54, @11, @25, nil ];
         numComments = [NSMutableArray arrayWithObjects: @7, @22, @81, @0, @3, @17, @3, @25, @7, @8, @4, @14, @12, @17, @2, @8, nil ];
         

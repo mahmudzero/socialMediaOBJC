@@ -21,7 +21,12 @@
     id peopleId;
     id startupId;
     NSDictionary *dataDict;
+    NSDictionary *startupDict;
     int numberOfCells;
+    int numberOfStartups;
+    NSString *jsonpath;
+    NSData *data;
+    id jsonData;
 }
 
     - (void)viewDidLoad {
@@ -31,6 +36,7 @@
         startupId = @"startupCell";
         numberOfCells = 12;
         [self deserializeJSON];
+        [self deserializeStartupJson];
         [self setNeedsStatusBarAppearanceUpdate];
     }
 
@@ -40,12 +46,21 @@
     }
 
     - (void)deserializeJSON {
-        NSString *jsonpath = [[NSBundle mainBundle] pathForResource:@"exploreTab-data" ofType:@"json"];
-        NSData *data = [NSData dataWithContentsOfFile:jsonpath];
+        jsonpath = [[NSBundle mainBundle] pathForResource:@"exploreTab-data" ofType:@"json"];
+        data = [NSData dataWithContentsOfFile:jsonpath];
         NSError *error = nil;
-        id jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
         dataDict = jsonData;
         numberOfCells = (int)[[dataDict objectForKey:@"data"] count];
+    }
+
+    - (void)deserializeStartupJson {
+        jsonpath = [[NSBundle mainBundle] pathForResource:@"startups" ofType:@"json"];
+        data = [NSData dataWithContentsOfFile:jsonpath];
+        NSError *error = nil;
+        jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        startupDict = jsonData;
+        numberOfStartups = (int)[[startupDict objectForKey:@"data"] count];
     }
 
     - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -74,7 +89,11 @@
 
     #pragma mark CollectionViewDelegate Methods
     - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-        return numberOfCells;
+        if(collectionView == _peopleCollection) {
+                return numberOfCells;
+        } else {
+            return numberOfStartups;
+        }
     }
 
     - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -84,16 +103,26 @@
             [cell setIdeaValues:[[[dataDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"userID"] withUserNamed:[[[dataDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"name"] withUserTitle:[[[dataDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"title"] withText:[[[dataDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"status"] withImageURL:[[[dataDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"profilePic"] withSkillImage:[[[dataDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"skillPic"]];
             return cell;
         } else {
-            return [collectionView dequeueReusableCellWithReuseIdentifier:startupId forIndexPath:indexPath];
+            PersonCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:startupId forIndexPath:indexPath];
+            NSInteger position = indexPath.row;
+            [cell setIdeaValues:[[[startupDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"userID"] withUserNamed:[[[startupDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"name"] withUserTitle:[[[startupDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"title"] withText:[[[startupDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"status"] withImageURL:[[[startupDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"profilePic"] withSkillImage:[[[startupDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"skillPic"]];
+            return cell;
         }
         
     }
 
     - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-        NSInteger position = indexPath.row;
-        UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:16];
-        CGRect rect = [[[[dataDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"status"] boundingRectWithSize:CGSizeMake(self.view.frame.size.width, 1000) options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: font}  context:nil];
-        return CGSizeMake(self.view.frame.size.width, 352 + rect.size.height);
+        if(collectionView == _peopleCollection) {
+            NSInteger position = indexPath.row;
+            UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:16];
+            CGRect rect = [[[[dataDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"status"] boundingRectWithSize:CGSizeMake(self.view.frame.size.width, 1000) options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: font}  context:nil];
+            return CGSizeMake(self.view.frame.size.width, 352 + rect.size.height);
+        } else {
+            NSInteger position = indexPath.row;
+            UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:16];
+            CGRect rect = [[[[startupDict objectForKey:@"data"] objectAtIndex:position] objectForKey:@"status"] boundingRectWithSize:CGSizeMake(self.view.frame.size.width, 1000) options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: font}  context:nil];
+            return CGSizeMake(self.view.frame.size.width, 352 + rect.size.height);
+        }
     }
 
 @end
